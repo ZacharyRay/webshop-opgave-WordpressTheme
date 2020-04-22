@@ -1,0 +1,12 @@
+.hero {
+  height: 100px;
+  width: 100px;
+  border: 1px solid grey; }
+
+#hero-wrap #hero-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 300px;
+  width: 300px; }
+
