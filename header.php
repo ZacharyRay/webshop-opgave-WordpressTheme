@@ -41,4 +41,3 @@
         <a href="#">undersider</a>
     </div>
 
-</div>

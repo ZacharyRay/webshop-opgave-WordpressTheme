@@ -66,6 +66,11 @@ body {
     justify-content: center;
     align-items: center; }
 
+  #categories-container a {
+    margin: 0 5px; }
+
 .woocommerce-billing-fields__field-wrapper p {
   height: 300px; }
+
+
 
