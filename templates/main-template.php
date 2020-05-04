@@ -24,4 +24,8 @@ get_header();
 ?>
 
 
+<!-- Woo -->
+
+<?php echo do_shortcode('[products]') ?>
+
 <?php get_footer(); ?>
