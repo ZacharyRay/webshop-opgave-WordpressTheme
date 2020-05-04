@@ -38,37 +38,32 @@
 }
 
 #categories-container {
-    height: 50px;
     border: 1px solid black;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     #categories-categories {
         width: 60%;
         left: 0;
-        position: absolute;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        margin-left: 15px;
         
     }
 
     #categories-subpage {
-        width: 30%;
+        width: 40%;
         right: 0;
-        position: absolute;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
+        margin-right: 15px;
     }
-}
-
     a {
-        margin: 0 5px;
+        margin: 15px 10px;
         text-decoration: none;
-        
+        color: $links-color;
     }
 
 }
-
