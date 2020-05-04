@@ -26,6 +26,9 @@ get_header();
 
 <!-- Woo -->
 
-<?php echo do_shortcode('[products]') ?>
+<?php get_template_part('woo-elements/product', 'display'); ?>
+
+
+
 
 <?php get_footer(); ?>

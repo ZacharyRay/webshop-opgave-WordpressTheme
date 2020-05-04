@@ -10,3 +10,8 @@
   height: 300px;
   width: 200px; }
 
+body {
+  box-sizing: border-box;
+  margin: 0px !important;
+  padding: 0px !important; }
+
