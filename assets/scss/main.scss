@@ -1,5 +1,6 @@
 // Import settings (fonts, media queries, mixins etc.)
 @import "settings/media-queries";
+@import "settings/colors";
 
 // import acf elements
 
@@ -9,3 +10,8 @@
 // Import other
 
 @import "registration/registration";
+
+
+// import main
+
+@import "main/header";
