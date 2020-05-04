@@ -48,3 +48,12 @@ add_action('admin_init', 'remove_textarea');
     function remove_textarea() {
             remove_post_type_support( 'page', 'editor' );
     };
+
+
+// woo commerce theme support
+
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
