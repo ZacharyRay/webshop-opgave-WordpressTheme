@@ -15,4 +15,31 @@
 </nav>
 <div class="content-grid">
 
-<div>DASD</div>
+
+<div id="header-container">
+    <div id="header-box_one"></div>
+    <div id="header-box_two"></div>
+
+    <div id="header-box_three">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<div id="categories-container">
+    <div id="categories-categories">
+        <a href="#">kategorier</a>
+        <a href="#">kategorier</a>
+        <a href="#">kategorier</a>
+        <a href="#">kategorier</a>
+        <a href="#">kategorier</a>
+    </div>
+    <div id="categories-subpage">
+        <a href="#">undersider</a>
+        <a href="#">undersider</a>
+        <a href="#">undersider</a>
+        <a href="#">undersider</a>
+    </div>
+
+</div>
