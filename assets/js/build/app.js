@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\njQuery(document).ready(function ($) {});\n\n//# sourceURL=webpack:///./assets/js/app.js?");
+eval("\n\njQuery(document).ready(function ($) {\n  // Hero slider\n  $('.main-carousel').flickity({\n    // options\n    cellAlign: 'left',\n    contain: true\n  });\n});\n\n//# sourceURL=webpack:///./assets/js/app.js?");
 
 /***/ }),
 
