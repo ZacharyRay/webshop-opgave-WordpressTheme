@@ -16,7 +16,8 @@ add_action('wp_enqueue_scripts', 'abtion_enqueueFiles');
  * Register nav-menu
  */
 register_nav_menus(array(
-    'main' => 'Main Menu'
+    'main' => 'Main Menu',
+    'subpages' => 'Sub Pages'
 ));
 
 class subpage_Walker extends Walker_Page {
@@ -60,3 +61,13 @@ function mytheme_add_woocommerce_support() {
 }
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+// Custom logo
+
+add_theme_support( 'custom-logo', array(
+    'height' => 100,
+    'width' => 400,
+    'flex-height' => true,
+    'flex-width' => true,
+    'header-text' => array( 'site-title', 'site-description' ),
+   ) );
