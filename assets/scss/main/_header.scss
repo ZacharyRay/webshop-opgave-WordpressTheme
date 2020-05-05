@@ -2,8 +2,7 @@
 
 #header-container {
     width: 100%;
-    height: 150px;
-    border: 1px black solid;
+    background-color: $primary-color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,44 +10,96 @@
 
     #header-box_one {
         width: 20%;
-        height: 50px;
-        border: 1px solid black;
         left: 15px;
         position: absolute;
+        display: flex;
+
+        div {
+            width: 15%;
+            &:first-child {
+                background-color: $secondary-color;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                position: relative;
+                padding-right: 15px;
+                &:after {
+                    content: "All";
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    color: $primary-font-color;
+                }
+            }
+        }
+
+        input {
+            width: 70%;
+            background-color: $primary-background;
+            border: none;
+            padding: 0 15px;
+        }
+
+        button {
+            width: 20%;
+            background: $tertiary-color url(http://localhost/hovedopgave/wp-content/uploads/2020/05/search.png) center no-repeat;         
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding-left: 15px;
+            border: none;
+            cursor: pointer;
+            background-size: 25px;
+        }
+
+
     }
 
-    #header-box_two {
-        width: 40%;
-        height: 50px;
-        border: 1px solid black;
-    }
+     #header-box_two {
+        padding: 20px;
+        
+     }
 
     #header-box_three {
         width: 20%;
-        height: 50px;
-        right: 15px;
+        right: 0;
         position: absolute;
         display: flex;
+        
         div {
-            width: 33%;
-            border: 1px solid black;
+            width: 33.3%;
             margin: 0 5px;
+            min-height: 152px;
+
+            &:first-child {
+                background: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/account.png) center no-repeat;  
+                margin: 0;
+            }
+            &:nth-child(2) {
+                background: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/heart.png) center no-repeat;  
+                margin: 0;
+            }
+            &:last-child {
+                background: $tertiary-color url(http://localhost/hovedopgave/wp-content/uploads/2020/05/shoppingbag.png) center no-repeat;  
+                margin: 0;
+            }
+
         }
     }
 }
 
 #categories-container {
-    border: 1px solid black;
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: $secondary-color;
     #categories-categories {
         width: 60%;
         left: 0;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-left: 15px;
+        margin-left: $margin;
+        
         
     }
 
@@ -58,12 +109,13 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 15px;
+        margin-right: $margin;
     }
     a {
         margin: 15px 10px;
         text-decoration: none;
         color: $links-color;
+        font-size: $catagory-size;
     }
 
 }

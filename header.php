@@ -16,8 +16,12 @@
 <div class="content-grid">
 
 <div id="header-container">
-    <div id="header-box_one"></div>
-    <div id="header-box_two"></div>
+    <div id="header-box_one">
+        <div></div>
+        <input type="text" placeholder="Search Here...">
+        <button></button>
+    </div>
+    <div id="header-box_two"><a href="#"><img src="http://localhost/hovedopgave/wp-content/uploads/2020/05/logo.png" alt=""></a></div>
 
     <div id="header-box_three">
         <div></div>
@@ -28,17 +32,17 @@
 
 <div id="categories-container">
     <div id="categories-categories">
-        <a href="#">kategorier</a>
-        <a href="#">kategorier</a>
-        <a href="#">kategorier</a>
-        <a href="#">kategorier</a>
-        <a href="#">kategorier</a>
+        <a href="#">Kategorier</a>
+        <a href="#">Kategorier</a>
+        <a href="#">Kategorier</a>
+        <a href="#">Kategorier</a>
+        <a href="#">Kategorier</a>
     </div>
     <div id="categories-subpage">
-        <a href="#">undersider</a>
-        <a href="#">undersider</a>
-        <a href="#">undersider</a>
-        <a href="#">undersider</a>
+        <a href="#">Undersider</a>
+        <a href="#">Undersider</a>
+        <a href="#">Undersider</a>
+        <a href="#">Undersider</a>
     </div>
 
 </div>
