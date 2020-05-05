@@ -26,6 +26,8 @@ get_header();
 
 <!-- Woo -->
 
+<?php get_template_part('woo-elements/product', 'category'); ?>
+
 <?php get_template_part('woo-elements/product', 'display'); ?>
 
 
