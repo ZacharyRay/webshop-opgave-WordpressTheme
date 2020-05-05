@@ -28,32 +28,52 @@
     </div>
 
     <div id="header-box_three">
-        <div></div>
-        <div></div>
-        <div></div>
+
+        <div id="account">
+        <?php wp_nav_menu(
+        array(
+        'theme_location' => 'Account'
+        )
+        ); ?>
+        </div>
+
+        
+        <div id="favorites">
+        <?php wp_nav_menu(
+        array(
+        'theme_location' => 'Favorites'
+        )
+        ); ?>
+        </div>
+
+
+        <div id="checkout">
+        <?php wp_nav_menu(
+        array(
+        'theme_location' => 'Checkout'
+        )
+        ); ?>
+        </div>
+
     </div>
 </div>
 
 <!-- Menu -->
-<?php wp_nav_menu(
- array(
- 'theme_location' => 'Main Menu'
- )
- ); ?>
+
 
 <div id="categories-container">
     <div id="categories-categories">
-        <a href="#">Kategorier</a>
-        <a href="#">Kategorier</a>
-        <a href="#">Kategorier</a>
-        <a href="#">Kategorier</a>
-        <a href="#">Kategorier</a>
+        <?php wp_nav_menu(
+        array(
+        'theme_location' => 'MainMenu'
+        )
+        ); ?>
     </div>
     <div id="categories-subpage">
-        <a href="#">Undersider</a>
-        <a href="#">Undersider</a>
-        <a href="#">Undersider</a>
-        <a href="#">Undersider</a>
+    <?php wp_nav_menu(
+        array(
+        'theme_location' => 'SubPages'
+        )
+        ); ?>
     </div>
-
-</div>
+ </div>

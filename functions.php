@@ -16,8 +16,11 @@ add_action('wp_enqueue_scripts', 'abtion_enqueueFiles');
  * Register nav-menu
  */
 register_nav_menus(array(
-    'main' => 'Main Menu',
-    'subpages' => 'Sub Pages'
+    'MainMenu' => 'MainMenu',
+    'SubPages' => 'SubPages',
+    'Account' => 'Account',
+    'Favorites' => 'Favorites',
+    'Checkout' => 'Checkout',
 ));
 
 class subpage_Walker extends Walker_Page {
