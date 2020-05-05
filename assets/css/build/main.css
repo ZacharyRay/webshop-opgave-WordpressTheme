@@ -63,21 +63,47 @@ body {
     right: 0;
     position: absolute;
     display: flex; }
-    #header-container #header-box_three div {
+    #header-container #header-box_three .menu-topmenu-container {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%; }
+      #header-container #header-box_three .menu-topmenu-container ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none; }
+        #header-container #header-box_three .menu-topmenu-container ul li {
+          margin: 0 25px; }
+          #header-container #header-box_three .menu-topmenu-container ul li a {
+            padding: 20px 0;
+            opacity: 0;
+            font-size: 17px; }
+    #header-container #header-box_three #account div, #header-container #header-box_three #favorites div, #header-container #header-box_three #checkout div {
+      display: flex;
+      align-items: center; }
+      #header-container #header-box_three #account div ul, #header-container #header-box_three #favorites div ul, #header-container #header-box_three #checkout div ul {
+        padding: 0;
+        list-style: none; }
+        #header-container #header-box_three #account div ul li a, #header-container #header-box_three #favorites div ul li a, #header-container #header-box_three #checkout div ul li a {
+          padding: 20px;
+          opacity: 0; }
+    #header-container #header-box_three #account, #header-container #header-box_three #favorites, #header-container #header-box_three #checkout {
       width: 33.3%;
-      margin: 0 5px;
-      min-height: 152px; }
-      #header-container #header-box_three div:first-child {
+      margin: 0; }
+      #header-container #header-box_three #account div, #header-container #header-box_three #favorites div, #header-container #header-box_three #checkout div {
+        min-height: 152px; }
+      #header-container #header-box_three #account:first-child, #header-container #header-box_three #favorites:first-child, #header-container #header-box_three #checkout:first-child {
         background: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/account.png) center no-repeat;
-        margin: 0;
+        min-height: 152px;
         background-size: 33%; }
-      #header-container #header-box_three div:nth-child(2) {
+      #header-container #header-box_three #account:nth-child(2), #header-container #header-box_three #favorites:nth-child(2), #header-container #header-box_three #checkout:nth-child(2) {
         background: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/heart.png) center no-repeat;
-        margin: 0;
+        min-height: 152px;
         background-size: 33%; }
-      #header-container #header-box_three div:last-child {
+      #header-container #header-box_three #account:nth-child(3), #header-container #header-box_three #favorites:nth-child(3), #header-container #header-box_three #checkout:nth-child(3) {
         background: #668c75 url(http://localhost/hovedopgave/wp-content/uploads/2020/05/shoppingbag.png) center no-repeat;
-        margin: 0;
+        min-height: 152px;
         background-size: 33%; }
 
 #categories-container {
@@ -92,6 +118,15 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin-left: 15px; }
+    #categories-container #categories-categories ul {
+      display: flex;
+      list-style: none;
+      padding: 0; }
+      #categories-container #categories-categories ul a {
+        margin: 15px 10px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px; }
   #categories-container #categories-subpage {
     width: 40%;
     right: 0;
@@ -99,11 +134,15 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin-right: 15px; }
-  #categories-container a {
-    margin: 15px 10px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px; }
+    #categories-container #categories-subpage ul {
+      display: flex;
+      list-style: none;
+      padding: 0; }
+      #categories-container #categories-subpage ul a {
+        margin: 15px 10px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px; }
 
 .woocommerce-product-gallery {
   opacity: 100 !important; }
