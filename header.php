@@ -21,7 +21,11 @@
         <input type="text" placeholder="Search Here...">
         <button></button>
     </div>
-    <div id="header-box_two"><a href="#"><img src="http://localhost/hovedopgave/wp-content/uploads/2020/05/logo.png" alt=""></a></div>
+    <div id="header-box_two"><a href="#">
+        <?php if ( function_exists( 'the_custom_logo' ) ) {
+        the_custom_logo(); } ?>
+        </a>
+    </div>
 
     <div id="header-box_three">
         <div></div>
@@ -29,6 +33,13 @@
         <div></div>
     </div>
 </div>
+
+<!-- Menu -->
+<?php wp_nav_menu(
+ array(
+ 'theme_location' => 'Main Menu'
+ )
+ ); ?>
 
 <div id="categories-container">
     <div id="categories-categories">
