@@ -28,13 +28,12 @@ body {
     position: absolute;
     display: flex; }
     #header-container #header-box_one div {
-      width: 15%; }
+      min-width: 45px; }
       #header-container #header-box_one div:first-child {
         background-color: #8d7261;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        position: relative;
-        padding: 20px 15px 20px 0; }
+        position: relative; }
         #header-container #header-box_one div:first-child:after {
           content: "All";
           transform: translate(-50%, -50%);
@@ -48,7 +47,7 @@ body {
       border: none;
       padding: 0 15px; }
     #header-container #header-box_one button {
-      width: 20%;
+      min-width: 45px;
       background: #668c75 url(http://localhost/hovedopgave/wp-content/uploads/2020/05/search.png) center no-repeat;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
@@ -59,7 +58,6 @@ body {
   #header-container #header-box_two {
     padding: 20px; }
   #header-container #header-box_three {
-    width: 20%;
     right: 0;
     position: absolute;
     display: flex; }
@@ -143,6 +141,28 @@ body {
         text-decoration: none;
         color: #fff;
         font-size: 20px; }
+
+#footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #464646; }
+  #footer-container #contact, #footer-container #brands, #footer-container #customer-service, #footer-container #mailchimp {
+    width: 20%;
+    border: solid 1px black;
+    margin: 15px 15px;
+    padding: 15px;
+    color: #fff;
+    line-height: 1.2; }
+    #footer-container #contact a, #footer-container #brands a, #footer-container #customer-service a, #footer-container #mailchimp a {
+      color: #fff;
+      text-decoration: none; }
+    #footer-container #contact h2, #footer-container #brands h2, #footer-container #customer-service h2, #footer-container #mailchimp h2 {
+      margin: 0; }
+    #footer-container #contact ul, #footer-container #brands ul, #footer-container #customer-service ul, #footer-container #mailchimp ul {
+      padding: 0; }
+      #footer-container #contact ul li, #footer-container #brands ul li, #footer-container #customer-service ul li, #footer-container #mailchimp ul li {
+        list-style: none; }
 
 .woocommerce-product-gallery {
   opacity: 100 !important; }
