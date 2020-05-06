@@ -147,13 +147,21 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #464646; }
+  @media screen and (max-width: 992px) {
+    #footer-container {
+      flex-wrap: wrap; } }
   #footer-container #contact, #footer-container #brands, #footer-container #customer-service, #footer-container #mailchimp {
     width: 20%;
-    border: solid 1px black;
     margin: 15px 15px;
     padding: 15px;
     color: #fff;
     line-height: 1.2; }
+    @media screen and (max-width: 992px) {
+      #footer-container #contact, #footer-container #brands, #footer-container #customer-service, #footer-container #mailchimp {
+        width: 33%; } }
+    @media screen and (max-width: 582px) {
+      #footer-container #contact, #footer-container #brands, #footer-container #customer-service, #footer-container #mailchimp {
+        width: 100%; } }
     #footer-container #contact a, #footer-container #brands a, #footer-container #customer-service a, #footer-container #mailchimp a {
       color: #fff;
       text-decoration: none; }
@@ -163,6 +171,21 @@ body {
       padding: 0; }
       #footer-container #contact ul li, #footer-container #brands ul li, #footer-container #customer-service ul li, #footer-container #mailchimp ul li {
         list-style: none; }
+    #footer-container #contact #facebook::before, #footer-container #brands #facebook::before, #footer-container #customer-service #facebook::before, #footer-container #mailchimp #facebook::before {
+      content: '';
+      background-image: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/facebook.png); }
+    #footer-container #contact #mc_embed_signup, #footer-container #brands #mc_embed_signup, #footer-container #customer-service #mc_embed_signup, #footer-container #mailchimp #mc_embed_signup {
+      background-color: #464646 !important;
+      font-family: Arial, Helvetica, sans-serif !important; }
+      #footer-container #contact #mc_embed_signup form, #footer-container #brands #mc_embed_signup form, #footer-container #customer-service #mc_embed_signup form, #footer-container #mailchimp #mc_embed_signup form {
+        padding: 0 !important; }
+      @media screen and (max-width: 992px) {
+        #footer-container #contact #mc_embed_signup input, #footer-container #brands #mc_embed_signup input, #footer-container #customer-service #mc_embed_signup input, #footer-container #mailchimp #mc_embed_signup input {
+          width: 200px; } }
+      #footer-container #contact #mc_embed_signup #mc-embedded-subscribe, #footer-container #brands #mc_embed_signup #mc-embedded-subscribe, #footer-container #customer-service #mc_embed_signup #mc-embedded-subscribe, #footer-container #mailchimp #mc_embed_signup #mc-embedded-subscribe {
+        background-color: #456251; }
+        #footer-container #contact #mc_embed_signup #mc-embedded-subscribe:hover, #footer-container #brands #mc_embed_signup #mc-embedded-subscribe:hover, #footer-container #customer-service #mc_embed_signup #mc-embedded-subscribe:hover, #footer-container #mailchimp #mc_embed_signup #mc-embedded-subscribe:hover {
+          background-color: #5a806a; }
 
 .woocommerce-product-gallery {
   opacity: 100 !important; }

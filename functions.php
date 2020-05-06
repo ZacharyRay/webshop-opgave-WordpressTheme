@@ -21,6 +21,7 @@ register_nav_menus(array(
     'Account' => 'Account',
     'Favorites' => 'Favorites',
     'Checkout' => 'Checkout',
+    'FooterMenu' => 'FooterMenu'
 ));
 
 class subpage_Walker extends Walker_Page {
