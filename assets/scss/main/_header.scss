@@ -18,13 +18,13 @@
         display: flex;
         
         div {
-            width: 15%;
+            min-width: 45px;
             &:first-child {
                 background-color: $secondary-color;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
                 position: relative;
-                padding: 20px 15px 20px 0;
+                
                 &:after {
                     content: "All";
                     transform: translate(-50%, -50%);
@@ -44,7 +44,7 @@
         }
 
         button {
-            width: 20%;
+            min-width: 45px;
             background: $tertiary-color url(http://localhost/hovedopgave/wp-content/uploads/2020/05/search.png) center no-repeat;         
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
@@ -63,7 +63,7 @@
      }
 
     #header-box_three {
-        width: 20%;
+        
         right: 0;
         position: absolute;
         display: flex;
