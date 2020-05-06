@@ -6,14 +6,24 @@
     display: flex;
     justify-content: space-between;
     background-color: $primary-footer-color;
+    @include max-screen(992px) {
+        flex-wrap: wrap; 
+    }
 
     #contact, #brands, #customer-service, #mailchimp  {
         width: 20%;
-        border: solid 1px black;
         margin: 15px 15px;
         padding: 15px;
         color: $footer-text-color;
         line-height: 1.2;
+        
+        @include max-screen(992px) {
+            width: 33%;
+        }
+        @include max-screen(582px) {
+            width: 100%;
+        }
+        
 
         a {
             color: $footer-text-color;
@@ -29,6 +39,38 @@
             li {
                 list-style: none;
             }
+        }
+
+        #facebook {
+            &::before {
+                content: '';
+                background-image: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/facebook.png);
+            }
+
+        }
+
+        #mc_embed_signup {
+            background-color: $primary-footer-color !important;
+            font-family: Arial, Helvetica, sans-serif!important;
+
+            form {
+                padding: 0!important;
+            }
+
+            input {
+                @include max-screen(992px) {
+                    width: 200px;
+                }
+            }
+
+            #mc-embedded-subscribe {
+                background-color: $highlight-color;
+
+                &:hover {
+                    background-color: lighten($highlight-color, 10%)
+                }
+            }
+
         }
     }
 }
