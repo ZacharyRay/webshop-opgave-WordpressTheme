@@ -26,14 +26,32 @@
     width: 300px !important;
     height: 500px;
     margin: 20px !important;
+    position: relative;
     a{
         img{
             height: 100% !important;
             object-fit: contain;
             background-color: aliceblue;;
+            object-fit: cover;
         }
     }
     h2{
-        transform: translateY(-71px);
+        text-align: center;
+        position: absolute;
+        bottom: 0 !important;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 25px !important;
+        padding-top: 25px !important;
+        z-index: 2 !important;
+        background-color: rgba(134, 105, 94, 0.6);
+        color: white;
+        .count{
+            display: none;
+        }
+    }
+    h2:hover{
+        background-color: rgba(134, 105, 94, 1);
     }
 }
