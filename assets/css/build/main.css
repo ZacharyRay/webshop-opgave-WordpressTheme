@@ -213,11 +213,27 @@ body {
 .product-category {
   width: 300px !important;
   height: 500px;
-  margin: 20px !important; }
+  margin: 20px !important;
+  position: relative; }
   .product-category a img {
     height: 100% !important;
     object-fit: contain;
-    background-color: aliceblue; }
+    background-color: aliceblue;
+    object-fit: cover; }
   .product-category h2 {
-    transform: translateY(-71px); }
+    text-align: center;
+    position: absolute;
+    bottom: 0 !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px !important;
+    padding-top: 25px !important;
+    z-index: 2 !important;
+    background-color: rgba(134, 105, 94, 0.6);
+    color: white; }
+    .product-category h2 .count {
+      display: none; }
+  .product-category h2:hover {
+    background-color: #86695e; }
 
