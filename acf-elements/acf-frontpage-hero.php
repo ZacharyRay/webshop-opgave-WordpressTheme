@@ -1,5 +1,5 @@
 <?php
-            $image = get_sub_field('hero_image');
+            $image = get_sub_field('frontpage_hero_image');
 ?>
 
 <div id="hero-wrap">
@@ -7,7 +7,7 @@
 </div>
 
 
-
+<div class="hej">hejhaefhjkaejfhaelfhaekhfleakfle</div>
 
 
 
