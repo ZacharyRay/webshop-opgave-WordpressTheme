@@ -189,6 +189,8 @@ body {
         background-color: #456251; }
         #footer-container #contact #mc_embed_signup #mc-embedded-subscribe:hover, #footer-container #brands #mc_embed_signup #mc-embedded-subscribe:hover, #footer-container #customer-service #mc_embed_signup #mc-embedded-subscribe:hover, #footer-container #mailchimp #mc_embed_signup #mc-embedded-subscribe:hover {
           background-color: #5a806a; }
+      #footer-container #contact #mc_embed_signup #mc_embed_signup_scroll h2, #footer-container #brands #mc_embed_signup #mc_embed_signup_scroll h2, #footer-container #customer-service #mc_embed_signup #mc_embed_signup_scroll h2, #footer-container #mailchimp #mc_embed_signup #mc_embed_signup_scroll h2 {
+        margin-bottom: 15px; }
 
 .woocommerce-product-gallery {
   opacity: 100 !important; }

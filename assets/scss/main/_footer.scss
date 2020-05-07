@@ -70,6 +70,11 @@
                     background-color: lighten($highlight-color, 10%)
                 }
             }
+            #mc_embed_signup_scroll {
+                h2 {
+                    margin-bottom: 15px;
+                }
+            }
 
         }
     }
