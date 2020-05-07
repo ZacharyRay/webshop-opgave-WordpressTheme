@@ -2,27 +2,36 @@
             $image = get_sub_field('frontpage_hero_image');
 ?>
 
-<div id="hero-wrap">
-  <div id="hero-image" style="background-image: url('<?= $image ?>')"></div>
+<div id="frontpage-hero-image-container" class="main-carousel">
+  <div class="carousel-cell" id="frontpage-hero-image" style="background-image: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/Frontpage-image.png);"></div>
+    <div id="frontpage-hero-text-container">
+    
+      <div id="headline">
+        Midseason sale
+      </div>
+      
+      <div id="sub-title">
+        Up to 40% off selected products
+      </div>
+      <a id="buy-button" href="">
+        Shop now
+      </a>
+    </div>
+
+
+
+    <div class="carousel-cell" id="frontpage-hero-image" style="background-image: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/Frontpage-image.png);"></div>
+    <div id="frontpage-hero-text-container">
+    
+      <div id="headline">
+        Midseason sale
+      </div>
+      
+      <div id="sub-title">
+        Up to 40% off selected products
+      </div>
+      <a id="buy-button" href="">
+        Shop now
+      </a>
+    </div>
 </div>
-
-
-<div class="hej">hejhaefhjkaejfhaelfhaekhfleakfle</div>
-
-
-
-
-
-
-<!-- 
-        <div class="carousel">
-              <?php foreach($image as $the_image) { ?>
-                <div class="carousel-cell" style="background-image: url('<?= $the_image['choose_image'] ?>')">
-                  <div class="video">
-                    <?= $the_image['choose_video']; ?>
-                  </div>
-                </div>
-              <?php } ?>
-            </div>
-
-            -->
