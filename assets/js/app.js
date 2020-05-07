@@ -5,8 +5,9 @@ jQuery(document).ready(function($) {
 
 $('.main-carousel').flickity({
     // options
-    cellAlign: 'left',
-    contain: true
+    cellAlign: 'center',
+    contain: true,
+    autoPlay: true,
   });
 
 });

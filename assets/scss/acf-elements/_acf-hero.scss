@@ -1,9 +1,56 @@
-#hero-wrap {
-    #hero-image{
-        background-repeat: no-repeat;
+#frontpage-hero-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    #frontpage-hero-image, .carousel-cell {
+        width: 100%;
+        padding-top: 50%;
+        position: relative;
         background-position: center;
-        background-size: contain;
-        height: 300px;
-        width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    #frontpage-hero-text-container {
+        flex-wrap: wrap;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+
+        #headline {
+            font-size: 72px;
+            color: $primary-font-color;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        #sub-title {
+            font-size: 40px;
+            color: $primary-font-color;
+            font-weight: 700;
+            margin: 30px 0 60px 0;
+        }
+
+        
+            
+            #buy-button {
+                font-size: 22px;
+                color: $primary-font-color;
+                font-weight: 700;
+                text-transform: uppercase;
+                background-color: $highlight-color;
+                padding: 25px 15px 25px 15px;
+                width: 20%;
+                margin: 0 auto;
+                text-decoration: none;
+            }
+        
     }
 }
