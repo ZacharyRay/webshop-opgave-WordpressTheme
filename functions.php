@@ -5,9 +5,11 @@
  */
 function abtion_enqueueFiles() {
 	// CSS
-	wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/build/main.css');
+    wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/build/main.css');
+    wp_enqueue_style('flickity', get_template_directory_uri() . '/assets/css/build/flickity.min.css');
 	// JS
-	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
+    wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
+    wp_enqueue_script('flickity', get_template_directory_uri() . '/assets/js/flickity.pkgd.min.js');
 	wp_enqueue_script('app', get_template_directory_uri() . '/assets/js/build/app.js');
 }
 add_action('wp_enqueue_scripts', 'abtion_enqueueFiles');
@@ -65,6 +67,7 @@ function mytheme_add_woocommerce_support() {
 }
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
 
 // Custom logo
 

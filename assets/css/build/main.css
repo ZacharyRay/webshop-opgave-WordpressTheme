@@ -241,6 +241,15 @@ body {
   .product-category h2:hover {
     background-color: #86695e; }
 
+#items-on-sale-header {
+  width: 1030px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  margin-top: 40px; }
+  #items-on-sale-header p {
+    font-size: 2rem; }
+
 #woo-onsale-frontpage {
   width: 100vw;
   display: flex;
@@ -257,7 +266,7 @@ body {
         #woo-onsale-frontpage .woocommerce ul {
           grid-template-columns: repeat(4, 1fr); } }
       #woo-onsale-frontpage .woocommerce ul li {
-        margin: 0px !important;
+        margin: 0px 0px 45px 0px !important;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -265,7 +274,66 @@ body {
         #woo-onsale-frontpage .woocommerce ul li a {
           display: flex;
           flex-direction: column;
-          align-items: center; }
+          align-items: center;
+          color: black; }
+          #woo-onsale-frontpage .woocommerce ul li a span {
+            color: black; }
+          #woo-onsale-frontpage .woocommerce ul li a .onsale {
+            color: white;
+            left: 0 !important;
+            right: auto !important; }
+        #woo-onsale-frontpage .woocommerce ul li .button {
+          background-color: #456251;
+          color: white;
+          text-transform: uppercase; }
     #woo-onsale-frontpage .woocommerce ul::before {
+      display: none !important; }
+
+#recommended-header {
+  width: 1030px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  margin-top: 40px; }
+  #recommended-header p {
+    font-size: 2rem; }
+
+#woo-recommended-frontpage {
+  width: 100vw;
+  display: flex;
+  justify-content: center; }
+  #woo-recommended-frontpage .woocommerce {
+    width: 100%; }
+    @media screen and (min-width: 1080px) {
+      #woo-recommended-frontpage .woocommerce {
+        width: 1070px !important; } }
+    #woo-recommended-frontpage .woocommerce ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+      @media screen and (min-width: 700px) {
+        #woo-recommended-frontpage .woocommerce ul {
+          grid-template-columns: repeat(4, 1fr); } }
+      #woo-recommended-frontpage .woocommerce ul li {
+        margin: 0px 0px 45px 0px !important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #woo-recommended-frontpage .woocommerce ul li a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: black; }
+          #woo-recommended-frontpage .woocommerce ul li a span {
+            color: black; }
+          #woo-recommended-frontpage .woocommerce ul li a .onsale {
+            color: white;
+            left: 0 !important;
+            right: auto !important; }
+        #woo-recommended-frontpage .woocommerce ul li .button {
+          background-color: #456251;
+          color: white;
+          text-transform: uppercase; }
+    #woo-recommended-frontpage .woocommerce ul::before {
       display: none !important; }
 
