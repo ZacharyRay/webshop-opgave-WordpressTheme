@@ -5,9 +5,11 @@ jQuery(document).ready(function($) {
 
 $('.main-carousel').flickity({
     // options
-    cellAlign: 'center',
+
     contain: true,
     autoPlay: true,
+    draggable: '>1',
+    prevNextButtons: false
   });
 
 });

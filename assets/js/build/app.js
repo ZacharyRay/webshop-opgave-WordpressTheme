@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\njQuery(document).ready(function ($) {\n  // Hero slider\n  $('.main-carousel').flickity({\n    // options\n    cellAlign: 'center',\n    contain: true,\n    autoPlay: true\n  });\n});\n\n//# sourceURL=webpack:///./assets/js/app.js?");
+eval("\n\njQuery(document).ready(function ($) {\n  // Hero slider\n  $('.main-carousel').flickity({\n    // options\n    contain: true,\n    autoPlay: true,\n    draggable: '>1',\n    prevNextButtons: false\n  });\n});\n\n//# sourceURL=webpack:///./assets/js/app.js?");
 
 /***/ }),
 

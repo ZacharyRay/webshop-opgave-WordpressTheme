@@ -1,22 +1,23 @@
-#frontpage-hero-image-container {
+// Slider made with customized Flickr \\
+
+
+.carousel {
+    background: #FAFAFA;
+  }
+  
+  .carousel-cell {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-    #frontpage-hero-image, .carousel-cell {
-        width: 100%;
-        padding-top: 50%;
-        position: relative;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
+    height: 200px;
+    margin-right: 0;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    padding-top: 33%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     #frontpage-hero-text-container {
-        flex-wrap: wrap;
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
@@ -53,4 +54,21 @@
             }
         
     }
+  }
+  
+  
+
+.flickity-slider {
+    width: 102% !important;
+}
+
+.flickity-page-dots {
+    bottom: 25px !important;
+}
+
+.flickity-page-dots .dot {
+    width: 50px !important;
+    background: #333 !important;
+    border-radius: 15% !important;
+   
 }
