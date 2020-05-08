@@ -7,16 +7,23 @@
     .woocommerce{
         width: 100%;
         @include min-screen(1080px){
-            width: 1070px !important;
+            width: 1030px !important;
         }
         ul{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+
             @include min-screen(700px){
                 flex-direction: row;
             }
+        }
+        ul::before{
+            display: none;
+        }
+        ul::after{
+            display: none;
         }
     }
 }
@@ -25,7 +32,7 @@
 .product-category{
     width: 300px !important;
     height: 500px;
-    margin: 20px !important;
+    margin: 0px !important;
     position: relative;
     a{
         img{

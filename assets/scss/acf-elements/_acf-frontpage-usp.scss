@@ -10,7 +10,7 @@
         width: 1030px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         .usp-box{
             display: flex;
@@ -18,11 +18,15 @@
             justify-content: center;
             align-items: center;
             .usp-icon{
-                height: 50px;
-                width: 50px;
+                height: 40px;
+                width: 40px;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
+                margin-right: 10px;
+            }
+            .usp-text{
+                color: $white;
             }
         }
     }
