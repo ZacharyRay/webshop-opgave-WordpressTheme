@@ -17,11 +17,11 @@
 <div class="content-grid">
 
 <div id="header-container">
-    <div id="header-box_one">
-        <div></div>
-        <input type="text" placeholder="Search Here...">
-        <button></button>
+    <div id="search">
+        <?php echo do_shortcode('[smart_search id="1"]'); ?>
     </div>
+   
+    
     <div id="header-box_two"><a href="#">
         <?php if ( function_exists( 'the_custom_logo' ) ) {
         the_custom_logo(); } ?>
