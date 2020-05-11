@@ -6,44 +6,16 @@
 <!-- Slider made with customized flickr -  -->
 
 <div class="main-carousel">
-  <div class="carousel-cell" id="frontpage-hero-image" style="background-image: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/Frontpage-image.png)";>
+<?php if(!empty($image)) { ?>
+<?php foreach($image as $hero_image){ ?>
+  <div class="carousel-cell" id="frontpage-hero-image" style="background-image: url(<?= $hero_image['hero_image'] ?>)";>
     <div id="frontpage-hero-text-container">
-      
-      <div id="headline">
-        Midseason sale
-      </div>
-      
-      <div id="sub-title">
-        Up to 40% off selected products
-      </div>
-
+      <div id="headline"><?= $hero_image['hero_text'] ?></div>
+      <div id="sub-title"><?= $hero_image['hero_secondary_text'] ?></div>
       <a id="buy-button" href="#">
         Shop now
       </a>
-
     </div>
-
   </div>
-
-  <div class="carousel-cell" id="frontpage-hero-image" style="background-image: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/Butik9_Siw-Aldershvile-Nielsen-1400x933-1.jpg)";>
-    <div id="frontpage-hero-text-container">
-      
-      <div id="headline">
-        Midseason sale
-      </div>
-      
-      <div id="sub-title">
-        Up to 40% off selected products
-      </div>
-
-      <a id="buy-button" href="#">
-        Shop now
-      </a>
-
-    </div>
-
-  </div>
-
+<?php }} ?>
 </div>
-
-
