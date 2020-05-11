@@ -17,8 +17,10 @@
 <div class="content-grid">
 
 <div id="header-container">
-    <div id="search">
-        <?php echo do_shortcode('[smart_search id="1"]'); ?>
+    <div id="header-box_one">
+        <div></div>
+        <input type="text" placeholder="Search Here...">
+        <button style="background-image: url:('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/search.png')"></button>
     </div>
    
     

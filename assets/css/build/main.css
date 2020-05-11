@@ -3,8 +3,8 @@
   width: 100px;
   border: 1px solid grey; }
 
-.carousel {
-  background: #FAFAFA; }
+.main-carousel {
+  margin-bottom: 1em; }
 
 .carousel-cell {
   width: 100%;
@@ -206,7 +206,7 @@ body {
       padding: 0 15px; }
     #header-container #header-box_one button {
       min-width: 45px;
-      background: #668c75 url(http://localhost/hovedopgave/wp-content/uploads/2020/05/search.png) center no-repeat;
+      background: #668c75 center no-repeat;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
       padding: 20px 0 20px 15px;
@@ -250,15 +250,15 @@ body {
       #header-container #header-box_three #account div, #header-container #header-box_three #favorites div, #header-container #header-box_three #checkout div {
         min-height: 152px; }
       #header-container #header-box_three #account:first-child, #header-container #header-box_three #favorites:first-child, #header-container #header-box_three #checkout:first-child {
-        background: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/account.png) center no-repeat;
+        background: url("http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/account.png") center no-repeat;
         min-height: 152px;
         background-size: 33%; }
       #header-container #header-box_three #account:nth-child(2), #header-container #header-box_three #favorites:nth-child(2), #header-container #header-box_three #checkout:nth-child(2) {
-        background: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/heart.png) center no-repeat;
+        background: url("http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/heart.png") center no-repeat;
         min-height: 152px;
         background-size: 33%; }
       #header-container #header-box_three #account:nth-child(3), #header-container #header-box_three #favorites:nth-child(3), #header-container #header-box_three #checkout:nth-child(3) {
-        background: #668c75 url(http://localhost/hovedopgave/wp-content/uploads/2020/05/shoppingbag.png) center no-repeat;
+        background: #668c75 url("http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/shoppingbag.png") center no-repeat;
         min-height: 152px;
         background-size: 33%; }
 
