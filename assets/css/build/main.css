@@ -329,9 +329,18 @@ body {
       padding: 0; }
       #footer-container #contact ul li, #footer-container #brands ul li, #footer-container #customer-service ul li, #footer-container #mailchimp ul li {
         list-style: none; }
-    #footer-container #contact #facebook::before, #footer-container #brands #facebook::before, #footer-container #customer-service #facebook::before, #footer-container #mailchimp #facebook::before {
-      content: '';
-      background-image: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/facebook.png); }
+    #footer-container #contact #social-media a, #footer-container #brands #social-media a, #footer-container #customer-service #social-media a, #footer-container #mailchimp #social-media a {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+      #footer-container #contact #social-media a #some-image, #footer-container #brands #social-media a #some-image, #footer-container #customer-service #social-media a #some-image, #footer-container #mailchimp #social-media a #some-image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px; }
     #footer-container #contact #mc_embed_signup, #footer-container #brands #mc_embed_signup, #footer-container #customer-service #mc_embed_signup, #footer-container #mailchimp #mc_embed_signup {
       background-color: #464646 !important;
       font-family: Arial, Helvetica, sans-serif !important; }
