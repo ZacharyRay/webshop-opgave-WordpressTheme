@@ -41,12 +41,21 @@
             }
         }
 
-        #facebook {
-            &::before {
-                content: '';
-                background-image: url(http://localhost/hovedopgave/wp-content/uploads/2020/05/facebook.png);
+        #social-media {
+            a{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                #some-image{
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 10px;
+                }
             }
-
         }
 
         #mc_embed_signup {
