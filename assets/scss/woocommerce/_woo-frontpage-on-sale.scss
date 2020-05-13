@@ -35,7 +35,7 @@
                     align-items: center;
                     color: black;
                     img{
-                        
+                        height: 285px !important;
                     }
                     span{
                         color: black;
@@ -57,4 +57,21 @@
             display: none !important;
         }
     }
+}
+
+#woo-onsale-frontpage .woocommerce ul li a {
+    @include max-screen(1200px){
+        grid-template-columns: (2, 1fr)!important;
+    }
+    @include max-screen(592px){
+        grid-template-columns: (1, 1fr)!important;
+        justify-items: center !important;
+    }
+}
+
+#woo-onsale-frontpage .woocommerce ul li {
+    @include max-screen(1200px){
+        width: 50%;
+    }
+    
 }
