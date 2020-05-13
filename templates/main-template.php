@@ -43,6 +43,11 @@ get_header();
         <?php get_template_part('woo-elements/woo', 'frontpage-recommended'); ?>
       <?php endif; ?>
 
+      <?php //frontpage recommended (woocommerce) ?>
+      <?php if( get_row_layout() == 'subpage' ):?>
+        <?php get_template_part('acf-elements/acf', 'subpage'); ?>
+      <?php endif; ?>
+
 <?php
   endwhile;  
   endif;
