@@ -6,6 +6,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    @include max-screen (768px) {  
+        width: 100%;  
+        height: auto;
+     }
     #usp-frontpage-flex{
         width: 1030px;
         display: flex;
@@ -17,6 +21,10 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+
+            @include max-screen (768px) {  
+               width: 100%;  
+            }
             .usp-icon{
                 height: 40px;
                 width: 40px;
@@ -24,6 +32,19 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 margin-right: 10px;
+
+                @include max-screen (1200px) {
+                    height: 30px;
+                    width: 30px;
+                    font-size: 13px;
+                }
+
+                @include max-screen (768px) {  
+                    margin: 10px 0;
+                    padding: 5px 0px;
+                 }
+
+                
             }
             .usp-text{
                 color: $white;
