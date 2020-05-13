@@ -526,3 +526,6 @@ body {
     #woo-recommended-frontpage .woocommerce ul::before {
       display: none !important; }
 
+#primary #main .product .woocommerce-product-gallery {
+  opacity: 0.4; }
+
