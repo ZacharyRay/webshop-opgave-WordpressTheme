@@ -14,11 +14,9 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            margin: 10px 0;
 
-            @include min-screen(992px){
+            @include min-screen(700px){
                 flex-direction: row;
-                margin: 0;
             }
         }
         ul::before{
@@ -35,13 +33,10 @@
     height: 500px;
     margin: 0px !important;
     position: relative;
-    margin: 10px 0 !important;
-    @include min-screen (768px) {  
-        margin: 0 !important;
-     }
     a{
         img{
-            background-color: aliceblue;;
+            height: 100% !important;
+            background-color: aliceblue;
             object-fit: cover;
             
         }
