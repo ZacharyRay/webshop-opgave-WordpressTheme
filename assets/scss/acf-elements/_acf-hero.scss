@@ -1,6 +1,5 @@
 // Slider made with customized Flickr \\
 
-
 .main-carousel {
     margin-bottom: 1em;
   }
@@ -49,7 +48,6 @@
             @include min-screen (1024px) {
                 font-size: 72px;
             }
-
 
         }
 
@@ -128,6 +126,6 @@
 .flickity-page-dots .dot {
     width: 50px !important;
     background: #333 !important;
-    border-radius: 30% !important;
+    border-radius: 15px !important;
     height: 15px !important;
 }
