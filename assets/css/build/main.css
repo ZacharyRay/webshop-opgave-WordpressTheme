@@ -118,6 +118,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
+    @media screen and (max-width: 768px) {
+      #usp-frontpage-wrapper #usp-frontpage-flex {
+        flex-wrap: wrap; } }
     #usp-frontpage-wrapper #usp-frontpage-flex .usp-box {
       display: flex;
       flex-direction: row;
@@ -412,8 +415,7 @@ body {
       margin: 0 !important; } }
   .product-category a img {
     background-color: aliceblue;
-    object-fit: cover;
-    height: 285px !important; }
+    object-fit: cover; }
   .product-category h2 {
     text-align: center;
     position: absolute;
@@ -430,19 +432,6 @@ body {
       display: none; }
   .product-category h2:hover {
     opacity: 0.8; }
-
-@media screen and (max-width: 1200px) {
-  #woo-recommended-frontpage .woocommerce ul {
-    grid-template-columns: 2, 1fr !important; } }
-
-@media screen and (max-width: 592px) {
-  #woo-recommended-frontpage .woocommerce ul {
-    grid-template-columns: 1, 1fr !important;
-    justify-items: center !important; } }
-
-@media screen and (max-width: 1200px) {
-  #woo-recommended-frontpage .woocommerce ul li {
-    width: 50%; } }
 
 #items-on-sale-header {
   width: 1030px;
@@ -479,6 +468,8 @@ body {
           flex-direction: column;
           align-items: center;
           color: black; }
+          #woo-onsale-frontpage .woocommerce ul li a img {
+            height: 285px !important; }
           #woo-onsale-frontpage .woocommerce ul li a span {
             color: black; }
           #woo-onsale-frontpage .woocommerce ul li a .onsale {
@@ -491,6 +482,19 @@ body {
           text-transform: uppercase; }
     #woo-onsale-frontpage .woocommerce ul::before {
       display: none !important; }
+
+@media screen and (max-width: 1200px) {
+  #woo-onsale-frontpage .woocommerce ul li a {
+    grid-template-columns: 2, 1fr !important; } }
+
+@media screen and (max-width: 592px) {
+  #woo-onsale-frontpage .woocommerce ul li a {
+    grid-template-columns: 1, 1fr !important;
+    justify-items: center !important; } }
+
+@media screen and (max-width: 1200px) {
+  #woo-onsale-frontpage .woocommerce ul li {
+    width: 50%; } }
 
 #recommended-header {
   width: 1030px;

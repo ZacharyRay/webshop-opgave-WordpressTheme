@@ -43,7 +43,7 @@
         img{
             background-color: aliceblue;;
             object-fit: cover;
-            height: 285px !important;
+            
         }
     }
     h2{
@@ -67,19 +67,3 @@
     }
 }
 
-#woo-recommended-frontpage .woocommerce ul {
-    @include max-screen(1200px){
-        grid-template-columns: (2, 1fr)!important;
-    }
-    @include max-screen(592px){
-        grid-template-columns: (1, 1fr)!important;
-        justify-items: center !important;
-    }
-}
-
-#woo-recommended-frontpage .woocommerce ul li {
-    @include max-screen(1200px){
-        width: 50%;
-    }
-    
-}
