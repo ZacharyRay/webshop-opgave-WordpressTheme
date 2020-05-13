@@ -16,6 +16,10 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        @include max-screen (768px) {  
+           flex-wrap: wrap;
+         }
+
         .usp-box{
             display: flex;
             flex-direction: row;
