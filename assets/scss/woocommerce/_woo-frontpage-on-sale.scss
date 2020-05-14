@@ -30,6 +30,10 @@
                 flex-direction: column;
                 align-items: center;
                 position: relative;
+                @include max-screen(700px){
+                    margin: 0px 0px 100px 0px !important;
+                    }
+
                 a{
                     display: flex;
                     flex-direction: column;
@@ -40,13 +44,18 @@
                     }
                     span{
                         color: black;
-                        position: absolute;
-                        bottom: -30px;
+                        
                     }
                     .onsale{
                         color: white;
                         left: 0 !important;
                         right: auto !important;
+                    }
+                    .price {
+                        position: absolute;
+                        bottom: -30px;
+                    }
+                    h2 {
                         position: absolute;
                         bottom: -10px;
                     }
