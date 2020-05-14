@@ -46,13 +46,21 @@
                         left: 0 !important;
                         right: auto !important;
                     }
+                    .price {
+                        position: absolute;
+                        bottom: -30px;
+                    }
+                    h2 {
+                        position: absolute;
+                        bottom: -10px;
+                    }
                 }
                 .button{
                     background-color: $highlight-color;
                     color: white;
                     text-transform: uppercase;
                     position: absolute;
-                    bottom: -40px !important;
+                    bottom: -70px !important;
                       }
             }
         }
