@@ -18,6 +18,10 @@
             @include min-screen(700px){
                 flex-direction: row;
             }
+
+            .products {
+                margin: 0!important;
+            }
         }
         ul::before{
             display: none;
@@ -31,14 +35,12 @@
 .product-category{
     width: 300px !important;
     height: 500px;
-    margin: 0px !important;
     position: relative;
     a{
         img{
             height: 100% !important;
             background-color: aliceblue;
             object-fit: cover;
-            
         }
     }
     h2{
