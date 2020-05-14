@@ -119,8 +119,8 @@
         }
         
         
-        #account, #favorites, #checkout {
-            width: 33.3%;
+        #favorites, #checkout {
+            width: 50%;
             margin: 0;
             div {
                 min-height: 152px;
@@ -129,16 +129,11 @@
             
 
             &:first-child {
-                background: url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/account.png') center no-repeat;  
-                min-height: 152px;
-                background-size: 33%;
-            }
-            &:nth-child(2) {
                 background: url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/heart.png') center no-repeat;  
                 min-height: 152px;
                 background-size: 33%;
             }
-            &:nth-child(3) {
+            &:last-child {
                 background: $tertiary-color url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/shoppingbag.png') center no-repeat;  
                 min-height: 152px;
                 background-size: 33%;
