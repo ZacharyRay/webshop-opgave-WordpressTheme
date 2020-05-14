@@ -29,6 +29,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                position: relative;
                 a{
                     display: flex;
                     flex-direction: column;
@@ -50,6 +51,8 @@
                     background-color: $highlight-color;
                     color: white;
                     text-transform: uppercase;
+                    position: absolute;
+                    bottom: -40px !important;
                       }
             }
         }

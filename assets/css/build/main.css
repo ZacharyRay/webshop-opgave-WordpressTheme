@@ -10,7 +10,6 @@
   width: 100%;
   height: 200px;
   margin-right: 0;
-  border-radius: 5px;
   counter-increment: carousel-cell;
   padding-top: 33%;
   background-position: center;
@@ -180,6 +179,10 @@
       #frontpage-banner div {
         font-size: 64px; } }
 
+#subpage-content div {
+  margin: 15px;
+  min-height: 500px; }
+
 html {
   overflow-x: hidden; }
 
@@ -263,20 +266,16 @@ body {
         #header-container #header-box_three #account div ul li a, #header-container #header-box_three #favorites div ul li a, #header-container #header-box_three #checkout div ul li a {
           padding: 20px;
           opacity: 0; }
-    #header-container #header-box_three #account, #header-container #header-box_three #favorites, #header-container #header-box_three #checkout {
-      width: 33.3%;
+    #header-container #header-box_three #favorites, #header-container #header-box_three #checkout {
+      width: 50%;
       margin: 0; }
-      #header-container #header-box_three #account div, #header-container #header-box_three #favorites div, #header-container #header-box_three #checkout div {
+      #header-container #header-box_three #favorites div, #header-container #header-box_three #checkout div {
         min-height: 152px; }
-      #header-container #header-box_three #account:first-child, #header-container #header-box_three #favorites:first-child, #header-container #header-box_three #checkout:first-child {
-        background: url("http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/account.png") center no-repeat;
-        min-height: 152px;
-        background-size: 33%; }
-      #header-container #header-box_three #account:nth-child(2), #header-container #header-box_three #favorites:nth-child(2), #header-container #header-box_three #checkout:nth-child(2) {
+      #header-container #header-box_three #favorites:first-child, #header-container #header-box_three #checkout:first-child {
         background: url("http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/heart.png") center no-repeat;
         min-height: 152px;
         background-size: 33%; }
-      #header-container #header-box_three #account:nth-child(3), #header-container #header-box_three #favorites:nth-child(3), #header-container #header-box_three #checkout:nth-child(3) {
+      #header-container #header-box_three #favorites:last-child, #header-container #header-box_three #checkout:last-child {
         background: #668c75 url("http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/shoppingbag.png") center no-repeat;
         min-height: 152px;
         background-size: 33%; }
@@ -457,14 +456,15 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        position: relative; }
         #woo-onsale-frontpage .woocommerce ul li a {
           display: flex;
           flex-direction: column;
           align-items: center;
           color: black; }
           #woo-onsale-frontpage .woocommerce ul li a img {
-            height: 285px !important; }
+            height: auto; }
           #woo-onsale-frontpage .woocommerce ul li a span {
             color: black; }
           #woo-onsale-frontpage .woocommerce ul li a .onsale {
@@ -474,7 +474,9 @@ body {
         #woo-onsale-frontpage .woocommerce ul li .button {
           background-color: #456251;
           color: white;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          position: absolute;
+          bottom: 40px !important; }
     #woo-onsale-frontpage .woocommerce ul::before {
       display: none !important; }
 
@@ -507,7 +509,8 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        position: relative; }
         #woo-recommended-frontpage .woocommerce ul li a {
           display: flex;
           flex-direction: column;
@@ -522,7 +525,9 @@ body {
         #woo-recommended-frontpage .woocommerce ul li .button {
           background-color: #456251;
           color: white;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          position: absolute;
+          bottom: -40px !important; }
     #woo-recommended-frontpage .woocommerce ul::before {
       display: none !important; }
 

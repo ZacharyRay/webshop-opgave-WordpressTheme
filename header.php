@@ -20,7 +20,7 @@
     <div id="header-box_one">
         <div></div>
         <input type="text" placeholder="Search Here...">
-        <button style="background-image: url:('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/search.png')"></button>
+        <button style="background-image: url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/search.png')"></button>
     </div>
    
     
@@ -31,15 +31,6 @@
     </div>
 
     <div id="header-box_three">
-
-        <div id="account">
-        <?php wp_nav_menu(
-        array(
-        'theme_location' => 'Account'
-        )
-        ); ?>
-        </div>
-
         
         <div id="favorites">
         <?php wp_nav_menu(

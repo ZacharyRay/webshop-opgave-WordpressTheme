@@ -3,6 +3,7 @@
 ?>
 
 <div id="subpage-content">
-    <?= $subpage ?>
-
+    <div>
+        <?= $subpage ?>
+    </div>
 </div>
