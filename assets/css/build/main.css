@@ -613,18 +613,108 @@ body {
     #woo-recommended-frontpage .woocommerce ul::before {
       display: none !important; }
 
-#product-wrap {
+.product #product-wrap {
   display: flex;
   flex-direction: row;
   width: 100vw;
   justify-content: center; }
-  #product-wrap #product-grid {
+  .product #product-wrap #product-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); }
-    @media screen and (min-width: 700px) {
-      #product-wrap #product-grid {
-        grid-template-columns: repeat(2, 440px); }
-        #product-wrap #product-grid #product-slider .woocommerce-product-gallery .flex-viewport {
-          width: 433px;
-          height: 433px; } }
+    grid-template-rows: 600px 400px;
+    grid-template-columns: repeat(1, 300px); }
+    @media screen and (min-width: 800px) {
+      .product #product-wrap #product-grid {
+        grid-template-columns: 440px 300px;
+        grid-template-rows: 600px; } }
+    .product #product-wrap #product-grid #product-slider .woocommerce-product-gallery ol {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      padding-inline-start: 0px; }
+    .product #product-wrap #product-grid #product-slider .woocommerce-product-gallery .flex-viewport {
+      width: 300px;
+      height: 433px; }
+      @media screen and (min-width: 800px) {
+        .product #product-wrap #product-grid #product-slider .woocommerce-product-gallery .flex-viewport {
+          width: 433px; } }
+      .product #product-wrap #product-grid #product-slider .woocommerce-product-gallery .flex-viewport .woocommerce-product-gallery__wrapper {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px; }
+        @media screen and (min-width: 800px) {
+          .product #product-wrap #product-grid #product-slider .woocommerce-product-gallery .flex-viewport .woocommerce-product-gallery__wrapper {
+            margin-left: 70px; } }
+
+.product #related-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .product #related-box .woocommerce-tabs {
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: repeat(1, 300px); }
+    .product #related-box .woocommerce-tabs .woocommerce-Tabs-panel h2 {
+      background-color: #EEEEEE;
+      width: 150px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 10px 10px 0px 0px;
+      margin-block-end: 0em; }
+    .product #related-box .woocommerce-tabs .woocommerce-Tabs-panel p {
+      background-color: #EEEEEE;
+      padding: 20px;
+      margin-block-start: 0em;
+      border-radius: 0px 10px 10px 10px; }
+    @media screen and (min-width: 800px) {
+      .product #related-box .woocommerce-tabs {
+        grid-template-columns: 740px;
+        grid-template-rows: 400px; } }
+    .product #related-box .woocommerce-tabs ul {
+      display: none; }
+  .product #related-box .related {
+    width: 100%; }
+    @media screen and (min-width: 1080px) {
+      .product #related-box .related {
+        width: 1070px !important;
+        height: 560px; } }
+    .product #related-box .related ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+      @media screen and (min-width: 700px) {
+        .product #related-box .related ul {
+          grid-template-columns: repeat(4, 1fr); } }
+      .product #related-box .related ul li {
+        margin: 0px !important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative; }
+        .product #related-box .related ul li .product_type_simple {
+          padding: .618em 1em;
+          text-decoration: none; }
+        .product #related-box .related ul li a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: black; }
+          .product #related-box .related ul li a span {
+            color: black; }
+          .product #related-box .related ul li a .onsale {
+            display: none; }
+          .product #related-box .related ul li a .price {
+            position: absolute;
+            bottom: -30px; }
+          .product #related-box .related ul li a h2 {
+            bottom: -10px; }
+        .product #related-box .related ul li .button {
+          background-color: #456251;
+          color: white;
+          text-transform: uppercase;
+          position: absolute;
+          bottom: -70px !important; }
+    .product #related-box .related ul::before {
+      display: none !important; }
 
