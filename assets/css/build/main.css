@@ -156,7 +156,7 @@
   position: relative; }
   #frontpage-banner div {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -199,6 +199,9 @@ body {
   align-items: center;
   justify-content: center;
   position: relative; }
+  @media screen and (max-width: 600px) {
+    #header-container {
+      box-shadow: 0px 5px 5px rgba(68, 68, 68, 0.6); } }
   #header-container #search {
     position: absolute;
     left: 35px; }
@@ -207,6 +210,9 @@ body {
     left: 15px;
     position: absolute;
     display: flex; }
+    @media screen and (max-width: 600px) {
+      #header-container #header-box_one {
+        display: none; } }
     #header-container #header-box_one div {
       min-width: 45px; }
       #header-container #header-box_one div:first-child {
@@ -237,10 +243,24 @@ body {
       background-size: 25px; }
   #header-container #header-box_two {
     padding: 20px; }
+    @media screen and (max-width: 1200px) {
+      #header-container #header-box_two img {
+        margin: 0 auto;
+        display: flex;
+        width: 50%;
+        height: 50%; } }
+    @media screen and (max-width: 600px) {
+      #header-container #header-box_two img {
+        display: flex;
+        width: 50%;
+        height: 50%; } }
   #header-container #header-box_three {
     right: 0;
     position: absolute;
     display: flex; }
+    @media screen and (max-width: 600px) {
+      #header-container #header-box_three {
+        position: relative; } }
     #header-container #header-box_three .menu-topmenu-container {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -285,6 +305,9 @@ body {
   display: flex;
   align-items: center;
   background-color: #8d7261; }
+  @media screen and (max-width: 600px) {
+    #categories-container {
+      background-color: #ebe0d3; } }
   #categories-container #categories-categories {
     width: 60%;
     left: 0;
@@ -292,6 +315,9 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin-left: 15px; }
+    @media screen and (max-width: 600px) {
+      #categories-container #categories-categories {
+        display: none; } }
     #categories-container #categories-categories ul {
       display: flex;
       list-style: none;
@@ -308,6 +334,9 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin-right: 15px; }
+    @media screen and (max-width: 600px) {
+      #categories-container #categories-subpage {
+        display: none; } }
     #categories-container #categories-subpage ul {
       display: flex;
       list-style: none;
@@ -317,6 +346,40 @@ body {
         text-decoration: none;
         color: #fff;
         font-size: 20px; }
+  #categories-container #header-box_one-mobile {
+    display: none; }
+    @media screen and (max-width: 600px) {
+      #categories-container #header-box_one-mobile {
+        display: flex;
+        margin: 10px auto; } }
+    #categories-container #header-box_one-mobile div {
+      min-width: 45px; }
+      #categories-container #header-box_one-mobile div:first-child {
+        background-color: #8d7261;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: relative; }
+        #categories-container #header-box_one-mobile div:first-child:after {
+          content: "All";
+          transform: translate(-50%, -50%);
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          color: #fff; }
+    #categories-container #header-box_one-mobile input {
+      width: 70%;
+      background-color: #fff;
+      border: none;
+      padding: 0 15px; }
+    #categories-container #header-box_one-mobile button {
+      min-width: 45px;
+      background: #668c75 center no-repeat;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 20px 0 20px 15px;
+      border: none;
+      cursor: pointer;
+      background-size: 25px; }
 
 #footer-container {
   width: 100%;
@@ -396,6 +459,8 @@ body {
       @media screen and (min-width: 700px) {
         #woo-categories-frontpage .woocommerce ul {
           flex-direction: row; } }
+      #woo-categories-frontpage .woocommerce ul .products {
+        margin: 0 !important; }
     #woo-categories-frontpage .woocommerce ul::before {
       display: none; }
     #woo-categories-frontpage .woocommerce ul::after {
@@ -404,7 +469,6 @@ body {
 .product-category {
   width: 300px !important;
   height: 500px;
-  margin: 0px !important;
   position: relative; }
   .product-category a img {
     height: 100% !important;
@@ -452,12 +516,15 @@ body {
         #woo-onsale-frontpage .woocommerce ul {
           grid-template-columns: repeat(4, 1fr); } }
       #woo-onsale-frontpage .woocommerce ul li {
-        margin: 0px 0px 45px 0px !important;
+        margin: 0px 0px 70px 0px !important;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative; }
+        @media screen and (max-width: 700px) {
+          #woo-onsale-frontpage .woocommerce ul li {
+            margin: 0px 0px 100px 0px !important; } }
         #woo-onsale-frontpage .woocommerce ul li a {
           display: flex;
           flex-direction: column;
@@ -471,12 +538,18 @@ body {
             color: white;
             left: 0 !important;
             right: auto !important; }
+          #woo-onsale-frontpage .woocommerce ul li a .price {
+            position: absolute;
+            bottom: -30px; }
+          #woo-onsale-frontpage .woocommerce ul li a h2 {
+            position: absolute;
+            bottom: -10px; }
         #woo-onsale-frontpage .woocommerce ul li .button {
           background-color: #456251;
           color: white;
           text-transform: uppercase;
           position: absolute;
-          bottom: 40px !important; }
+          bottom: -70px !important; }
     #woo-onsale-frontpage .woocommerce ul::before {
       display: none !important; }
 
@@ -505,12 +578,15 @@ body {
         #woo-recommended-frontpage .woocommerce ul {
           grid-template-columns: repeat(4, 1fr); } }
       #woo-recommended-frontpage .woocommerce ul li {
-        margin: 0px 0px 45px 0px !important;
+        margin: 0px 0px 70px 0px !important;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative; }
+        @media screen and (max-width: 700px) {
+          #woo-recommended-frontpage .woocommerce ul li {
+            margin: 0px 0px 100px 0px !important; } }
         #woo-recommended-frontpage .woocommerce ul li a {
           display: flex;
           flex-direction: column;
@@ -522,12 +598,18 @@ body {
             color: white;
             left: 0 !important;
             right: auto !important; }
+          #woo-recommended-frontpage .woocommerce ul li a .price {
+            position: absolute;
+            bottom: -30px; }
+          #woo-recommended-frontpage .woocommerce ul li a h2 {
+            position: absolute;
+            bottom: -10px; }
         #woo-recommended-frontpage .woocommerce ul li .button {
           background-color: #456251;
           color: white;
           text-transform: uppercase;
           position: absolute;
-          bottom: -40px !important; }
+          bottom: -70px !important; }
     #woo-recommended-frontpage .woocommerce ul::before {
       display: none !important; }
 

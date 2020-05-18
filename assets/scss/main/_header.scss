@@ -10,7 +10,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
-
+    @include max-screen (600px) {
+        box-shadow: 0px 5px 5px rgba(68,68,68,0.6);
+    }
+    
     #search{
         position: absolute;
         left: 35px;
@@ -21,6 +24,9 @@
         left: 15px;
         position: absolute;
         display: flex;
+        @include max-screen (600px) {
+            display: none;
+    }
         
         div {
             min-width: 45px;
@@ -64,7 +70,20 @@
 
      #header-box_two {
         padding: 20px;
-        
+        img {
+            @include max-screen (1200px) {
+                margin: 0 auto;
+                display: flex;
+                width: 50%;
+                height: 50%;
+        }
+        @include max-screen (600px) {
+            display: flex;
+            width: 50%;
+            height: 50%;
+    }
+        }
+
      }
 
     #header-box_three {
@@ -72,6 +91,9 @@
         right: 0;
         position: absolute;
         display: flex;
+        @include max-screen (600px) {
+            position: relative;
+        }
 
         .menu-topmenu-container {
             position: absolute;
@@ -148,6 +170,9 @@
     display: flex;
     align-items: center;
     background-color: $secondary-color;
+    @include max-screen (600px) {
+        background-color: $primary-color;
+    }
     #categories-categories {
         width: 60%;
         left: 0;
@@ -155,6 +180,9 @@
         justify-content: flex-start;
         align-items: center;
         margin-left: $margin;
+        @include max-screen (600px) {
+            display: none;
+        }
 
         ul {
             display: flex;
@@ -168,9 +196,9 @@
                 font-size: $catagory-size;
             }
         }
-        
-        
     }
+
+    
 
     #categories-subpage {
         width: 40%;
@@ -179,6 +207,9 @@
         justify-content: flex-end;
         align-items: center;
         margin-right: $margin;
+        @include max-screen (600px) {
+            display: none;
+        }
 
         ul {
             display: flex;
@@ -194,4 +225,52 @@
         }
     }
 
-}
+    #header-box_one-mobile {
+        display: none;
+        @include max-screen (600px) {
+                display: flex;
+                margin: 10px auto;
+            }
+
+            div {
+                min-width: 45px;
+                &:first-child {
+                    background-color: $secondary-color;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    position: relative;
+                    
+                    &:after {
+                        content: "All";
+                        transform: translate(-50%, -50%);
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        color: $primary-font-color;
+                    }
+                }
+            }
+    
+            input {
+                width: 70%;
+                background-color: $primary-background;
+                border: none;
+                padding: 0 15px;
+            }
+    
+            button {
+                min-width: 45px;
+                background: $tertiary-color center no-repeat;         
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                padding: 20px 0 20px 15px;
+                border: none;
+                cursor: pointer;
+                background-size: 25px;
+            }
+        }
+    }
+
+
+
+
