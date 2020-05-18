@@ -22,6 +22,33 @@
         <input type="text" placeholder="Search Here...">
         <button style="background-image: url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/search.png')"></button>
     </div>
+
+    <div id="header-box_one-burgermenu">
+        <div id="menuToggle">
+            <input type="checkbox">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <div>
+                    <h2>Menu</h2>
+                </div>
+                
+                    <?php wp_nav_menu(
+                array(
+                'theme_location' => 'MainMenu'
+                )
+                ); ?>
+                            <?php wp_nav_menu(
+                array(
+                'theme_location' => 'SubPages'
+                )
+                ); ?>
+            </ul>
+        </div>
+    </div>
    
     
     <div id="header-box_two"><a href="#">
