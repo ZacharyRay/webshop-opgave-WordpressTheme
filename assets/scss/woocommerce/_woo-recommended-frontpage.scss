@@ -24,12 +24,15 @@
             grid-template-columns: repeat(4, 1fr);
             }
             li{
-                margin: 0px 0px 45px 0px !important;
+                margin: 0px 0px 70px 0px !important;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 position: relative;
+                @include max-screen(700px){
+                    margin: 0px 0px 100px 0px !important;
+                    }
                 a{
                     display: flex;
                     flex-direction: column;
