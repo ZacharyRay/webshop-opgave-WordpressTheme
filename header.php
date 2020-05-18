@@ -70,4 +70,9 @@
         )
         ); ?>
     </div>
+    <div id="header-box_one-mobile">
+        <div></div>
+        <input type="text" placeholder="Search Here...">
+        <button style="background-image: url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/search.png')"></button>
+    </div>
  </div>
