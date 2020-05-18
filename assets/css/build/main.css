@@ -885,3 +885,15 @@ body {
     .product #related-box .related ul::before {
       display: none !important; }
 
+#primary main {
+  width: 1030px;
+  margin: 20px auto 20px auto; }
+  #primary main ul {
+    display: grid;
+    grid-template-rows: 600px 400px;
+    grid-template-columns: repeat(1, 300px); }
+    @media screen and (min-width: 800px) {
+      #primary main ul {
+        grid-template-columns: 440px 300px;
+        grid-template-rows: 600px; } }
+
