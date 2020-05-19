@@ -66,6 +66,7 @@
             border: none;
             padding: 0 15px;
             border: 1px solid $primary-background;
+            counter-reset: $primary-font-color;
             &::placeholder {
                 color: $primary-font-color;
             }
@@ -180,12 +181,12 @@
             &:first-child {
                 background: url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/heart-1.png') center no-repeat;  
 
-                background-size: 33%;
+                background-size: 25%;
             }
             &:last-child {
                 background: url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/shoppingbag.png') center no-repeat;  
 
-                background-size: 33%;
+                background-size: 25%;
             }
 
         }
@@ -222,6 +223,11 @@
                 text-decoration: none;
                 color: $links-color;
                 font-size: $catagory-size;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
                 @include max-screen (992px) {
                     font-size: $catagory-size_small;
                 }
