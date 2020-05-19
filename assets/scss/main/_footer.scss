@@ -45,11 +45,22 @@
         }
 
         #social-media {
+
+            @include max-screen(582px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
             a{
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: center;
+                @include max-screen(582px) {
+                    width: 100%;
+                    justify-content: center;
+                }
+                
                 #some-image{
                     background-position: center;
                     background-repeat: no-repeat;

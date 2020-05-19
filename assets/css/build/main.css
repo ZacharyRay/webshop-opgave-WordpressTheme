@@ -73,21 +73,27 @@
       width: 20%;
       margin: 0 auto;
       text-decoration: none;
-      font-size: 13px; }
+      font-size: 13px;
+      -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75); }
+      .carousel-cell #frontpage-hero-text-container #buy-button:hover {
+        opacity: 0.8; }
       @media screen and (min-width: 480px) {
         .carousel-cell #frontpage-hero-text-container #buy-button {
           font-size: 14px;
-          padding: 15px 5px 15px 5px; } }
+          padding: 15px 35px 15px 35px; } }
       @media screen and (min-width: 594px) {
         .carousel-cell #frontpage-hero-text-container #buy-button {
           font-size: 18px;
-          padding: 20px 10px 20px 10px; } }
+          padding: 15px 35px 15px 35px; } }
       @media screen and (min-width: 594px) {
         .carousel-cell #frontpage-hero-text-container #buy-button {
-          font-size: 22px; } }
+          font-size: 22px;
+          padding: 15px 35px 15px 35px; } }
       @media screen and (min-width: 768px) {
         .carousel-cell #frontpage-hero-text-container #buy-button {
-          padding: 25px 15px 25px 15px; } }
+          padding: 15px 35px 15px 35px; } }
 
 .flickity-slider {
   width: 102% !important; }
@@ -134,7 +140,8 @@
       height: 70px; }
       @media screen and (max-width: 768px) {
         #usp-frontpage-wrapper #usp-frontpage-flex .usp-box {
-          width: 100%; } }
+          width: 100%;
+          margin: 15px; } }
       #usp-frontpage-wrapper #usp-frontpage-flex .usp-box .usp-icon {
         height: 40px;
         width: 40px;
@@ -249,7 +256,8 @@ body {
       background-color: #000;
       border: none;
       padding: 0 15px;
-      border: 1px solid #fff; }
+      border: 1px solid #fff;
+      counter-reset: #fff; }
       #header-container #header-box_one input::placeholder {
         color: #fff; }
     #header-container #header-box_one button {
@@ -322,10 +330,10 @@ body {
             width: 50px; } }
       #header-container #header-box_three #favorites:first-child, #header-container #header-box_three #checkout:first-child {
         background: url("http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/heart-1.png") center no-repeat;
-        background-size: 33%; }
+        background-size: 25%; }
       #header-container #header-box_three #favorites:last-child, #header-container #header-box_three #checkout:last-child {
         background: url("http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/shoppingbag.png") center no-repeat;
-        background-size: 33%; }
+        background-size: 25%; }
 
 #categories-container {
   width: 100%;
@@ -354,6 +362,8 @@ body {
         text-decoration: none;
         color: #000;
         font-size: 20px; }
+        #categories-container #categories-categories ul a:hover {
+          opacity: 0.8; }
         @media screen and (max-width: 992px) {
           #categories-container #categories-categories ul a {
             font-size: 16px; } }
@@ -548,6 +558,9 @@ body {
   @media screen and (max-width: 992px) {
     #footer-container {
       flex-wrap: wrap; } }
+  @media screen and (max-width: 992px) {
+    #footer-container {
+      text-align: center; } }
   #footer-container #contact, #footer-container #brands, #footer-container #customer-service, #footer-container #mailchimp {
     width: 20%;
     margin: 15px 15px;
@@ -569,11 +582,19 @@ body {
       padding: 0; }
       #footer-container #contact ul li, #footer-container #brands ul li, #footer-container #customer-service ul li, #footer-container #mailchimp ul li {
         list-style: none; }
+    @media screen and (max-width: 582px) {
+      #footer-container #contact #social-media, #footer-container #brands #social-media, #footer-container #customer-service #social-media, #footer-container #mailchimp #social-media {
+        display: flex;
+        flex-wrap: wrap; } }
     #footer-container #contact #social-media a, #footer-container #brands #social-media a, #footer-container #customer-service #social-media a, #footer-container #mailchimp #social-media a {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center; }
+      @media screen and (max-width: 582px) {
+        #footer-container #contact #social-media a, #footer-container #brands #social-media a, #footer-container #customer-service #social-media a, #footer-container #mailchimp #social-media a {
+          width: 100%;
+          justify-content: center; } }
       #footer-container #contact #social-media a #some-image, #footer-container #brands #social-media a #some-image, #footer-container #customer-service #social-media a #some-image, #footer-container #mailchimp #social-media a #some-image {
         background-position: center;
         background-repeat: no-repeat;
@@ -615,6 +636,8 @@ body {
       flex-direction: column;
       justify-content: space-between;
       align-items: center; }
+      #woo-categories-frontpage .woocommerce ul li {
+        margin: 0 !important; }
       @media screen and (min-width: 700px) {
         #woo-categories-frontpage .woocommerce ul {
           flex-direction: row; } }
@@ -632,8 +655,7 @@ body {
   .product-category a img {
     height: 100% !important;
     background-color: aliceblue;
-    object-fit: cover;
-    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%); }
+    object-fit: cover; }
     .product-category a img h2:hover {
       opacity: 0.8; }
   .product-category h2 {
@@ -647,8 +669,9 @@ body {
     padding-top: 25px !important;
     z-index: 2 !important;
     color: white;
-    font-size: 30px;
-    font-weight: 300; }
+    font-size: 30px !important;
+    font-weight: 300 !important;
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%) !important; }
     .product-category h2 .count {
       display: none; }
 
@@ -698,13 +721,16 @@ body {
           #woo-onsale-frontpage .woocommerce ul li a .onsale {
             color: white;
             left: 0 !important;
-            right: auto !important; }
+            right: auto !important;
+            background-color: #8b8b8b; }
           #woo-onsale-frontpage .woocommerce ul li a .price {
             position: absolute;
             bottom: -30px; }
           #woo-onsale-frontpage .woocommerce ul li a h2 {
             position: absolute;
             bottom: -10px; }
+            #woo-onsale-frontpage .woocommerce ul li a h2:hover {
+              opacity: 0.8; }
         #woo-onsale-frontpage .woocommerce ul li .button {
           background-color: #9aa48a;
           color: white;
@@ -758,13 +784,16 @@ body {
           #woo-recommended-frontpage .woocommerce ul li a .onsale {
             color: white;
             left: 0 !important;
-            right: auto !important; }
+            right: auto !important;
+            background-color: #8b8b8b; }
           #woo-recommended-frontpage .woocommerce ul li a .price {
             position: absolute;
             bottom: -30px; }
           #woo-recommended-frontpage .woocommerce ul li a h2 {
             position: absolute;
             bottom: -10px; }
+            #woo-recommended-frontpage .woocommerce ul li a h2:hover {
+              opacity: 0.8; }
         #woo-recommended-frontpage .woocommerce ul li .button {
           background-color: #9aa48a;
           color: white;

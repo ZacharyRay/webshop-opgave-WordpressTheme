@@ -33,6 +33,7 @@
 
             @include max-screen (768px) {  
                width: 100%;  
+               margin: 15px;
             }
             .usp-icon{
                 height: 40px;
