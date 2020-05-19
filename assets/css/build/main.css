@@ -66,7 +66,7 @@
       color: #fff;
       font-weight: 700;
       text-transform: uppercase;
-      background-color: #456251;
+      background-color: #9aa48a;
       padding: 15px 5px 15px 5px;
       width: 20%;
       margin: 0 auto;
@@ -102,7 +102,7 @@
 #usp-frontpage-wrapper {
   width: 100%;
   height: 100px;
-  background-color: #668c75;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -190,11 +190,11 @@ body {
   box-sizing: border-box;
   margin: 0px !important;
   padding: 0px !important;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Muli", sans-serif; }
 
 #header-container {
   width: 100%;
-  background-color: #ebe0d3;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,11 +221,13 @@ body {
       #header-container #header-box_one {
         display: none; } }
     #header-container #header-box_one div {
-      min-width: 45px; }
+      min-width: 45px;
+      border: 1px solid #fff;
+      background-color: #000; }
       #header-container #header-box_one div:first-child {
-        background-color: #8d7261;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        background-color: #000;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
         position: relative; }
         #header-container #header-box_one div:first-child:after {
           content: "All";
@@ -236,18 +238,22 @@ body {
           color: #fff; }
     #header-container #header-box_one input {
       width: 70%;
-      background-color: #fff;
+      background-color: #000;
       border: none;
-      padding: 0 15px; }
+      padding: 0 15px;
+      border: 1px solid #fff; }
+      #header-container #header-box_one input::placeholder {
+        color: #fff; }
     #header-container #header-box_one button {
       min-width: 45px;
-      background: #668c75 center no-repeat;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
+      background: #000 center no-repeat;
+      border-top-right-radius: 13px;
+      border-bottom-right-radius: 13px;
       padding: 20px 0 20px 15px;
       border: none;
       cursor: pointer;
-      background-size: 25px; }
+      background-size: 25px;
+      border: 1px solid #fff; }
   #header-container #header-box_two {
     padding: 20px; }
     @media screen and (max-width: 868px) {
@@ -310,17 +316,17 @@ body {
         background: url("http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/heart.png") center no-repeat;
         background-size: 33%; }
       #header-container #header-box_three #favorites:last-child, #header-container #header-box_three #checkout:last-child {
-        background: #668c75 url("http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/shoppingbag.png") center no-repeat;
+        background: url("http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/shoppingbag.png") center no-repeat;
         background-size: 33%; }
 
 #categories-container {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #8d7261; }
+  background-color: #000; }
   @media screen and (max-width: 600px) {
     #categories-container {
-      background-color: #ebe0d3; } }
+      background-color: #000; } }
   #categories-container #categories-categories {
     width: 60%;
     left: 0;
@@ -372,11 +378,13 @@ body {
         display: flex;
         margin: 10px auto; } }
     #categories-container #header-box_one-mobile div {
-      min-width: 45px; }
+      min-width: 45px;
+      border: 1px solid #fff;
+      background-color: #000; }
       #categories-container #header-box_one-mobile div:first-child {
-        background-color: #8d7261;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        background-color: #000;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
         position: relative; }
         #categories-container #header-box_one-mobile div:first-child:after {
           content: "All";
@@ -387,18 +395,23 @@ body {
           color: #fff; }
     #categories-container #header-box_one-mobile input {
       width: 70%;
-      background-color: #fff;
+      background-color: #000;
       border: none;
-      padding: 0 15px; }
+      padding: 0 15px;
+      border: 1px solid #fff; }
+      #categories-container #header-box_one-mobile input::placeholder {
+        color: #fff; }
     #categories-container #header-box_one-mobile button {
       min-width: 45px;
-      background: #668c75 center no-repeat;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
+      background: #fff center no-repeat;
+      border-top-right-radius: 13px;
+      border-bottom-right-radius: 13px;
       padding: 20px 0 20px 15px;
       border: none;
       cursor: pointer;
-      background-size: 25px; }
+      background-size: 25px;
+      border: 1px solid #fff;
+      background-color: #000; }
 
 #menuToggle {
   display: block;
@@ -438,7 +451,7 @@ body {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #8d7261;
+  background: #fff;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -457,7 +470,7 @@ body {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #ebe0d3; }
+  background: #000; }
 
 /*
  * But let's hide the middle one.
@@ -482,7 +495,7 @@ body {
   margin: -100px 0 0 -15px;
   padding: 35px 0px 0px 0px;
   min-height: 65vh;
-  background: #ebe0d3;
+  background: #000;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -492,10 +505,10 @@ body {
   #menu ul {
     padding: 0; }
     #menu ul li {
-      border-bottom: #8d7261 1px solid;
+      border-bottom: #000 1px solid;
       padding: 10px; }
   #menu h2 {
-    background-color: #8d7261;
+    background-color: #000;
     padding: 15px;
     text-align: end; }
   #menu li {
@@ -523,7 +536,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #464646; }
+  background-color: #fff; }
   @media screen and (max-width: 992px) {
     #footer-container {
       flex-wrap: wrap; } }
@@ -561,7 +574,7 @@ body {
         height: 15px;
         margin-right: 10px; }
     #footer-container #contact #mc_embed_signup, #footer-container #brands #mc_embed_signup, #footer-container #customer-service #mc_embed_signup, #footer-container #mailchimp #mc_embed_signup {
-      background-color: #464646 !important;
+      background-color: #fff !important;
       font-family: Arial, Helvetica, sans-serif !important; }
       #footer-container #contact #mc_embed_signup form, #footer-container #brands #mc_embed_signup form, #footer-container #customer-service #mc_embed_signup form, #footer-container #mailchimp #mc_embed_signup form {
         padding: 0 !important; }
@@ -569,9 +582,9 @@ body {
         #footer-container #contact #mc_embed_signup input, #footer-container #brands #mc_embed_signup input, #footer-container #customer-service #mc_embed_signup input, #footer-container #mailchimp #mc_embed_signup input {
           width: 200px; } }
       #footer-container #contact #mc_embed_signup #mc-embedded-subscribe, #footer-container #brands #mc_embed_signup #mc-embedded-subscribe, #footer-container #customer-service #mc_embed_signup #mc-embedded-subscribe, #footer-container #mailchimp #mc_embed_signup #mc-embedded-subscribe {
-        background-color: #456251; }
+        background-color: #9aa48a; }
         #footer-container #contact #mc_embed_signup #mc-embedded-subscribe:hover, #footer-container #brands #mc_embed_signup #mc-embedded-subscribe:hover, #footer-container #customer-service #mc_embed_signup #mc-embedded-subscribe:hover, #footer-container #mailchimp #mc_embed_signup #mc-embedded-subscribe:hover {
-          background-color: #5a806a; }
+          background-color: #b3baa7; }
       #footer-container #contact #mc_embed_signup #mc_embed_signup_scroll h2, #footer-container #brands #mc_embed_signup #mc_embed_signup_scroll h2, #footer-container #customer-service #mc_embed_signup #mc_embed_signup_scroll h2, #footer-container #mailchimp #mc_embed_signup #mc_embed_signup_scroll h2 {
         margin-bottom: 15px; }
 
@@ -622,7 +635,7 @@ body {
     padding-bottom: 25px !important;
     padding-top: 25px !important;
     z-index: 2 !important;
-    background-color: #8d7261;
+    background-color: #000;
     color: white; }
     .product-category h2 .count {
       display: none; }
@@ -683,7 +696,7 @@ body {
             position: absolute;
             bottom: -10px; }
         #woo-onsale-frontpage .woocommerce ul li .button {
-          background-color: #456251;
+          background-color: #9aa48a;
           color: white;
           text-transform: uppercase;
           position: absolute;
@@ -743,7 +756,7 @@ body {
             position: absolute;
             bottom: -10px; }
         #woo-recommended-frontpage .woocommerce ul li .button {
-          background-color: #456251;
+          background-color: #9aa48a;
           color: white;
           text-transform: uppercase;
           position: absolute;
@@ -808,7 +821,7 @@ body {
     .product #product-wrap #product-grid #product-info .summary form button {
       padding: 10px 35px 10px 35px;
       margin: 10px 0px 10px 0px;
-      background-color: #456251;
+      background-color: #9aa48a;
       color: #ffffff; }
     .product #product-wrap #product-grid #product-info .summary form button:hover {
       cursor: pointer; }
@@ -892,7 +905,7 @@ body {
               .product #related-box .related ul li a h2 {
                 position: absolute; } }
         .product #related-box .related ul li .button {
-          background-color: #456251;
+          background-color: #9aa48a;
           color: white;
           text-transform: uppercase;
           bottom: -70px !important; }
