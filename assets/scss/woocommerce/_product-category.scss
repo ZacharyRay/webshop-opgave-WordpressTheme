@@ -41,6 +41,9 @@
             height: 100% !important;
             background-color: aliceblue;
             object-fit: cover;
+            h2:hover{
+                opacity: 0.8;
+            }
         }
     }
     h2{
@@ -53,14 +56,11 @@
         padding-bottom: 25px !important;
         padding-top: 25px !important;
         z-index: 2 !important;
-        background-color: $secondary-color;
         color: white;
         .count{
             display: none;
         }
     }
-    h2:hover{
-        opacity: 0.8;
-    }
+
 }
 
