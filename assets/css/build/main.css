@@ -340,6 +340,9 @@ body {
         text-decoration: none;
         color: #fff;
         font-size: 20px; }
+        @media screen and (max-width: 992px) {
+          #categories-container #categories-categories ul a {
+            font-size: 16px; } }
   #categories-container #categories-subpage {
     width: 40%;
     right: 0;
@@ -359,6 +362,9 @@ body {
         text-decoration: none;
         color: #fff;
         font-size: 20px; }
+        @media screen and (max-width: 992px) {
+          #categories-container #categories-subpage ul a {
+            font-size: 16px; } }
   #categories-container #header-box_one-mobile {
     display: none; }
     @media screen and (max-width: 600px) {
@@ -475,6 +481,7 @@ body {
   width: 300px;
   margin: -100px 0 0 -15px;
   padding: 35px 0px 0px 0px;
+  min-height: 65vh;
   background: #ebe0d3;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -501,6 +508,16 @@ body {
  */
 #menuToggle input:checked ~ ul {
   transform: none; }
+
+#menu a:after {
+  content: '';
+  background-image: url(http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/arrow.png);
+  background-size: cover;
+  background-position: center;
+  height: 25px;
+  width: 10px;
+  position: absolute;
+  right: 15px; }
 
 #footer-container {
   width: 100%;
