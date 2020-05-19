@@ -71,7 +71,7 @@
         <div id="checkout">
         <?php wp_nav_menu(
         array(
-        'theme_location' => 'Checkout'
+        'theme_location' => 'Cart'
         )
         ); ?>
         </div>
