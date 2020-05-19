@@ -864,6 +864,7 @@ body {
         width: 1070px !important; } }
     .product #related-box .related ul {
       display: grid;
+      padding-inline-start: 0px;
       grid-template-columns: repeat(2, 1fr); }
       @media screen and (min-width: 700px) {
         .product #related-box .related ul {
@@ -915,15 +916,57 @@ body {
     .product #related-box .related ul::before {
       display: none !important; }
 
-#primary main {
+#primary main #categories-wrapper {
   width: 1030px;
   margin: 20px auto 20px auto; }
-  #primary main ul {
+  #primary main #categories-wrapper ul {
+    padding-inline-start: 0px;
     display: grid;
-    grid-template-rows: 600px 400px;
-    grid-template-columns: repeat(1, 300px); }
+    grid-template-columns: repeat(2, 1fr); }
     @media screen and (min-width: 800px) {
-      #primary main ul {
-        grid-template-columns: 440px 300px;
-        grid-template-rows: 600px; } }
+      #primary main #categories-wrapper ul {
+        grid-template-columns: repeat(4, 1fr); } }
+    #primary main #categories-wrapper ul li {
+      margin: 0px 0px 70px 0px !important;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative; }
+      #primary main #categories-wrapper ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        margin-top: 20px; }
+        #primary main #categories-wrapper ul li a img {
+          width: 250px;
+          height: auto;
+          display: block;
+          margin-bottom: 55px;
+          box-shadow: none; }
+        #primary main #categories-wrapper ul li a h2 {
+          bottom: -10px; }
+          @media screen and (min-width: 800px) {
+            #primary main #categories-wrapper ul li a h2 {
+              position: absolute; } }
+        #primary main #categories-wrapper ul li a .price {
+          bottom: -30px;
+          padding: 10px; }
+          @media screen and (min-width: 800px) {
+            #primary main #categories-wrapper ul li a .price {
+              position: absolute; } }
+        #primary main #categories-wrapper ul li a .onsale {
+          display: none; }
+      #primary main #categories-wrapper ul li .button {
+        background-color: #9aa48a;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-transform: uppercase;
+        bottom: -70px !important;
+        padding: .618em 1em;
+        text-decoration: none; }
+        @media screen and (min-width: 800px) {
+          #primary main #categories-wrapper ul li .button {
+            position: absolute; } }
 
