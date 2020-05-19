@@ -9,6 +9,9 @@
     @include max-screen(992px) {
         flex-wrap: wrap; 
     }
+    @include max-screen(992px) {
+        text-align: center;
+    }
 
     #contact, #brands, #customer-service, #mailchimp  {
         width: 20%;
