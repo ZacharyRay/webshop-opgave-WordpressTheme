@@ -131,6 +131,7 @@
                 }
                 ul{
                     display: grid;
+                    padding-inline-start: 0px;
                     grid-template-columns: repeat(2, 1fr);
                     @include min-screen(700px){
                     grid-template-columns: repeat(4, 1fr);
