@@ -41,10 +41,12 @@
         
         div {
             min-width: 45px;
+            border: 1px solid $primary-background;
+            background-color: $primary-color;
             &:first-child {
                 background-color: $secondary-color;
-                border-top-left-radius: 20px;
-                border-bottom-left-radius: 20px;
+                border-top-left-radius: 13px;
+                border-bottom-left-radius: 13px;
                 position: relative;
                 
                 &:after {
@@ -60,20 +62,25 @@
 
         input {
             width: 70%;
-            background-color: $primary-background;
+            background-color: $primary-color;
             border: none;
             padding: 0 15px;
+            border: 1px solid $primary-background;
+            &::placeholder {
+                color: $primary-font-color;
+            }
         }
 
         button {
             min-width: 45px;
-            background: $tertiary-color center no-repeat;         
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
+            background: $primary-color center no-repeat;         
+            border-top-right-radius: 13px;
+            border-bottom-right-radius: 13px;
             padding: 20px 0 20px 15px;
             border: none;
             cursor: pointer;
             background-size: 25px;
+            border: 1px solid $primary-background;
         }
 
 
@@ -176,7 +183,7 @@
                 background-size: 33%;
             }
             &:last-child {
-                background: $tertiary-color url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/shoppingbag.png') center no-repeat;  
+                background: url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/shoppingbag.png') center no-repeat;  
 
                 background-size: 33%;
             }
@@ -260,10 +267,12 @@
 
             div {
                 min-width: 45px;
+                border: 1px solid $primary-background;
+                background-color: $primary-color;
                 &:first-child {
                     background-color: $secondary-color;
-                    border-top-left-radius: 20px;
-                    border-bottom-left-radius: 20px;
+                    border-top-left-radius: 13px;
+                    border-bottom-left-radius: 13px;
                     position: relative;
                     
                     &:after {
@@ -279,20 +288,27 @@
     
             input {
                 width: 70%;
-                background-color: $primary-background;
+                background-color: $primary-color;
                 border: none;
                 padding: 0 15px;
+                border: 1px solid $primary-background;
+
+                &::placeholder {
+                    color: $primary-font-color;
+                }
             }
     
             button {
                 min-width: 45px;
                 background: $tertiary-color center no-repeat;         
-                border-top-right-radius: 20px;
-                border-bottom-right-radius: 20px;
+                border-top-right-radius: 13px;
+                border-bottom-right-radius: 13px;
                 padding: 20px 0 20px 15px;
                 border: none;
                 cursor: pointer;
                 background-size: 25px;
+                border: 1px solid $primary-background;
+                background-color: $primary-color;
             }
         }
     }
@@ -353,7 +369,7 @@
     margin-bottom: 5px;
     position: relative;
     
-    background: $secondary-color;
+    background: $tertiary-color;
     border-radius: 3px;
     
     z-index: 1;
