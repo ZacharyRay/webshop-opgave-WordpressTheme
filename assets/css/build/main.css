@@ -956,8 +956,21 @@ body {
       display: none !important; }
 
 #primary main #categories-wrapper {
-  width: 1030px;
+  width: 100%;
   margin: 20px auto 20px auto; }
+  @media screen and (min-width: 1030px) {
+    #primary main #categories-wrapper {
+      width: 1030px; } }
+  #primary main #categories-wrapper header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: #EEEEEE;
+    height: 120px;
+    align-items: center; }
+    #primary main #categories-wrapper header h2 {
+      font-weight: 100; }
   #primary main #categories-wrapper ul {
     padding-inline-start: 0px;
     display: grid;
@@ -979,19 +992,21 @@ body {
         color: black;
         margin-top: 20px; }
         #primary main #categories-wrapper ul li a img {
-          width: 250px;
+          width: 100%;
           height: auto;
           display: block;
           margin-bottom: 55px;
           box-shadow: none; }
         #primary main #categories-wrapper ul li a h2 {
-          bottom: -10px; }
+          bottom: -10px;
+          font-size: 1rem; }
           @media screen and (min-width: 800px) {
             #primary main #categories-wrapper ul li a h2 {
               position: absolute; } }
         #primary main #categories-wrapper ul li a .price {
           bottom: -30px;
-          padding: 10px; }
+          padding: 10px;
+          font-size: 1rem; }
           @media screen and (min-width: 800px) {
             #primary main #categories-wrapper ul li a .price {
               position: absolute; } }
@@ -1008,4 +1023,68 @@ body {
         @media screen and (min-width: 800px) {
           #primary main #categories-wrapper ul li .button {
             position: absolute; } }
+
+.content-grid .content .wrapper h2 {
+  background-color: #EEEEEE;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-weight: 100; }
+
+.content-grid .content .wrapper .woocommerce .woocommerce-cart-form .shop_table tbody .woocommerce-cart-form__cart-item {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  @media screen and (min-width: 800px) {
+    .content-grid .content .wrapper .woocommerce .woocommerce-cart-form .shop_table tbody .woocommerce-cart-form__cart-item {
+      display: table-row; } }
+  .content-grid .content .wrapper .woocommerce .woocommerce-cart-form .shop_table tbody .woocommerce-cart-form__cart-item .product-thumbnail {
+    display: flex !important; }
+  .content-grid .content .wrapper .woocommerce .woocommerce-cart-form .shop_table tbody .woocommerce-cart-form__cart-item td:before {
+    display: none; }
+
+.content-grid .content .wrapper .woocommerce .woocommerce-cart-form .shop_table tbody tr {
+  background-color: #EEEEEE; }
+  .content-grid .content .wrapper .woocommerce .woocommerce-cart-form .shop_table tbody tr td {
+    background-color: #ffffff; }
+    .content-grid .content .wrapper .woocommerce .woocommerce-cart-form .shop_table tbody tr td .coupon {
+      display: flex;
+      flex-direction: column; }
+      @media screen and (min-width: 800px) {
+        .content-grid .content .wrapper .woocommerce .woocommerce-cart-form .shop_table tbody tr td .coupon {
+          flex-direction: row; } }
+      .content-grid .content .wrapper .woocommerce .woocommerce-cart-form .shop_table tbody tr td .coupon input {
+        height: 35px;
+        width: 120px;
+        border-width: 2px;
+        margin-right: -5px; }
+      .content-grid .content .wrapper .woocommerce .woocommerce-cart-form .shop_table tbody tr td .coupon .button {
+        height: 41px;
+        width: 120px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0px;
+        font-size: 0.7rem;
+        color: #ffffff;
+        background-color: #9aa48a; }
+    .content-grid .content .wrapper .woocommerce .woocommerce-cart-form .shop_table tbody tr td .button {
+      background-color: #9aa48a;
+      color: white;
+      height: 40px;
+      border-radius: 0px;
+      font-size: 0.8rem;
+      width: 120px; }
+
+.content-grid .content .wrapper .woocommerce .cart-collaterals {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  .content-grid .content .wrapper .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a {
+    background-color: #9aa48a;
+    color: #ffffff;
+    border-radius: 0px; }
 
