@@ -48,6 +48,7 @@
                         color: white;
                         left: 0 !important;
                         right: auto !important;
+                        background-color: $sale;
                     }
                     .price {
                         position: absolute;
@@ -56,6 +57,9 @@
                     h2 {
                         position: absolute;
                         bottom: -10px;
+                        &:hover {
+                            opacity: 0.8;
+                        }
                     }
                 }
                 .button{
