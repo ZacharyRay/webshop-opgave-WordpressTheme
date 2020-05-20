@@ -222,8 +222,6 @@
                 text-decoration: none;
                 color: $links-color;
                 font-size: $catagory-size;
-            }
-
                 &:hover {
                     opacity: 0.8;
                     .sub-menu {
@@ -233,6 +231,9 @@
                         background: $primary-background;
                         margin-left: -15px;
                 }
+            }
+
+                
 
                 @include max-screen (992px) {
                     font-size: $catagory-size_small;
