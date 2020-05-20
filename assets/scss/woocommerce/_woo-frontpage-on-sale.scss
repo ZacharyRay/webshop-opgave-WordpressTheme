@@ -41,6 +41,9 @@
                     color: black;
                     img{
                         height: auto;
+                        &:hover {
+                            opacity: 0.8;
+                        }
                     }
                     span{
                         color: black;
@@ -70,6 +73,9 @@
                     text-transform: uppercase;
                     position: absolute;
                     bottom: -70px !important;
+                        &:hover {
+                            opacity: 0.8;
+                        }
                       }
             }
         }
