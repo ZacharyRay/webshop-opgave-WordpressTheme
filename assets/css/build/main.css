@@ -350,7 +350,6 @@ body {
     left: 0;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     margin-left: 15px; }
     @media screen and (max-width: 992px) {
       #categories-container #categories-categories {
@@ -366,6 +365,12 @@ body {
         font-size: 20px; }
         #categories-container #categories-categories ul a:hover {
           opacity: 0.8; }
+          #categories-container #categories-categories ul a:hover .sub-menu {
+            display: flex !important;
+            height: 400px;
+            z-index: 1000;
+            background: #fff;
+            margin-left: -15px; }
         @media screen and (max-width: 992px) {
           #categories-container #categories-categories ul a {
             font-size: 16px; } }
@@ -432,20 +437,18 @@ body {
       background-size: 25px;
       border: 1px solid #fff;
       background-color: #000; }
-  #categories-container .menu-item .menu-item-type-taxonomy .menu-item-object-product_cat .menu-item-has-children .sub-menu {
+  #categories-container .menu-item .sub-menu, #categories-container .menu-item-type-taxonomy .sub-menu, #categories-container .menu-item-object-product_cat .sub-menu, #categories-container .menu-item-has-children .sub-menu {
     display: none !important;
     position: absolute !important;
     width: 100% !important; }
-  #categories-container .menu-item .menu-item-type-taxonomy .menu-item-object-product_cat .menu-item-has-children:hover .sub-menu {
-    display: block !important; }
-    #categories-container .menu-item .menu-item-type-taxonomy .menu-item-object-product_cat .menu-item-has-children:hover .sub-menu li {
+    #categories-container .menu-item .sub-menu li, #categories-container .menu-item-type-taxonomy .sub-menu li, #categories-container .menu-item-object-product_cat .sub-menu li, #categories-container .menu-item-has-children .sub-menu li {
       width: 25% !important;
-      display: flex;
-      flex-wrap: wrap;
-      text-align: left; }
-      #categories-container .menu-item .menu-item-type-taxonomy .menu-item-object-product_cat .menu-item-has-children:hover .sub-menu li ul {
-        display: block;
-        width: 100%; }
+      display: flex !important;
+      flex-wrap: wrap !important;
+      text-align: left !important; }
+      #categories-container .menu-item .sub-menu li ul, #categories-container .menu-item-type-taxonomy .sub-menu li ul, #categories-container .menu-item-object-product_cat .sub-menu li ul, #categories-container .menu-item-has-children .sub-menu li ul {
+        display: block !important;
+        width: 100% !important; }
 
 #menuToggle {
   display: block;
