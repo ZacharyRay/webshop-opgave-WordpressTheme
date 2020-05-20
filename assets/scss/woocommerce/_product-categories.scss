@@ -44,6 +44,9 @@
                             display: block;
                             margin-bottom: 55px;
                             box-shadow: none;
+                            &:hover {
+                                opacity: 0.8;
+                            }
                         }
                         h2{
                             bottom: -10px;

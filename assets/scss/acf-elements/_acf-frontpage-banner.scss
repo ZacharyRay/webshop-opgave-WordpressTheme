@@ -15,6 +15,7 @@
         width: 100%;
         text-align: center;
         text-shadow: 0px 0px 5px #000;
+        cursor: default;
 
         @include min-screen (480px) {
             font-size: 24px;
