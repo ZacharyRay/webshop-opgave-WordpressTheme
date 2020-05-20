@@ -222,9 +222,16 @@
                 text-decoration: none;
                 color: $links-color;
                 font-size: $catagory-size;
+            }
 
                 &:hover {
                     opacity: 0.8;
+                    .sub-menu {
+                        display: flex !important;
+                        height: 400px;
+                        z-index: 1000;
+                        background: $primary-background;
+                        margin-left: -15px;
                 }
 
                 @include max-screen (992px) {
@@ -325,20 +332,13 @@
 
         .menu-item, .menu-item-type-taxonomy, .menu-item-object-product_cat, .menu-item-has-children {
             
+            
+
+
             .sub-menu{
                 display: none !important;
                 position: absolute !important;
                 width: 100% !important;
-
-                &:hover {
-                        display: flex !important;
-                        height: 400px;
-                }
-
-                &:first-of-type {
-                    margin-top: 15px;
-                }
-
 
                 li {
                     width: 25% !important;
