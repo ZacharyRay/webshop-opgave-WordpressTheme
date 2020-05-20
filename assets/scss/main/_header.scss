@@ -207,7 +207,6 @@
         left: 0;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
         margin-left: $margin;
         @include max-screen (992px) {
             display: none;
@@ -322,7 +321,7 @@
 
         // Mega Menu Dropdown \\ 
 
-    
+        
 
         .menu-item, .menu-item-type-taxonomy, .menu-item-object-product_cat, .menu-item-has-children {
             
@@ -330,24 +329,31 @@
                 display: none !important;
                 position: absolute !important;
                 width: 100% !important;
-            }
 
-            &:hover {
-                .sub-menu {
-                    display: block !important;
-                    li {
-                        width: 25% !important;
+                &:hover {
                         display: flex !important;
-                        flex-wrap: wrap !important;
-                        text-align: left !important;
-                        ul {
-                            display: block !important;
-                            width: 100% !important;
-                            
-                        }
+                        height: 400px;
+                }
+
+                &:first-of-type {
+                    margin-top: 15px;
+                }
+
+
+                li {
+                    width: 25% !important;
+                    display: flex !important;
+                    flex-wrap: wrap !important;
+                    text-align: left !important;
+                    ul {
+                        display: block !important;
+                        width: 100% !important;
+                        
                     }
                 }
             }
+
+            
         }
     
 
