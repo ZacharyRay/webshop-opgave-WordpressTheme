@@ -324,7 +324,7 @@
 
     
 
-        .menu-item .menu-item-type-taxonomy .menu-item-object-product_cat .menu-item-has-children {
+        .menu-item, .menu-item-type-taxonomy, .menu-item-object-product_cat, .menu-item-has-children {
             
             .sub-menu{
                 display: none !important;
@@ -337,12 +337,12 @@
                     display: block !important;
                     li {
                         width: 25% !important;
-                        display: flex;
-                        flex-wrap: wrap;
-                        text-align: left;
+                        display: flex !important;
+                        flex-wrap: wrap !important;
+                        text-align: left !important;
                         ul {
-                            display: block;
-                            width: 100%;
+                            display: block !important;
+                            width: 100% !important;
                             
                         }
                     }
