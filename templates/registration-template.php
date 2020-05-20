@@ -2,17 +2,15 @@
 /* 
 Template Name: Registration Template
 */
-get_header();
+
+
+get_header( 'registration' );
+
 ?>
 
-
 <div id="registration">
+<div id="registration-heading"><h1>Here you can register your new site</h1></div>
 <?php echo do_shortcode('[forminator_form id="5"]'); ?>
 </div>
 
-<?php echo do_shortcode('[wp_paypal button="subscribe" name="My product" amount="1.00" recurrence="1" period="M" src="1"
-return="http://hovedopgave.kinsta.cloud/"]'); ?>
-
-
-
-<?php get_footer(); ?>
+<?php get_footer( 'registration' ); ?>

@@ -1,0 +1,19 @@
+#registration{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    #registration-heading{
+        font-size: 1rem;
+        text-align: center;
+    }
+    form{
+        width: 200px;
+        @include min-screen(800px){
+            width: 400px;
+        }
+    }
+}
