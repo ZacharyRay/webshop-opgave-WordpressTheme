@@ -358,6 +358,12 @@ body {
       display: flex;
       list-style: none;
       padding: 0; }
+      #categories-container #categories-categories ul li:hover .sub-menu {
+        display: flex !important;
+        height: 400px !important;
+        z-index: 1000 !important;
+        background: #fff !important;
+        margin-left: -15px !important; }
       #categories-container #categories-categories ul a {
         margin: 15px 10px;
         text-decoration: none;
@@ -365,12 +371,6 @@ body {
         font-size: 20px; }
         #categories-container #categories-categories ul a:hover {
           opacity: 0.8; }
-          #categories-container #categories-categories ul a:hover .sub-menu {
-            display: flex !important;
-            height: 400px;
-            z-index: 1000;
-            background: #fff;
-            margin-left: -15px; }
         @media screen and (max-width: 992px) {
           #categories-container #categories-categories ul a {
             font-size: 16px; } }

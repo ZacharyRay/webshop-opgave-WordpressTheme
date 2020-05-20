@@ -217,6 +217,18 @@
             list-style: none;
             padding: 0;
 
+            li {
+                &:hover {
+                    .sub-menu {
+                        display: flex !important;
+                        height: 400px !important;
+                        z-index: 1000 !important;
+                        background: $primary-background !important;
+                        margin-left: -15px !important;
+                    }
+                } 
+            }
+
             a {
                 margin: 15px 10px;
                 text-decoration: none;
@@ -224,13 +236,7 @@
                 font-size: $catagory-size;
                 &:hover {
                     opacity: 0.8;
-                    .sub-menu {
-                        display: flex !important;
-                        height: 400px;
-                        z-index: 1000;
-                        background: $primary-background;
-                        margin-left: -15px;
-                }
+                    
             }
 
                 
@@ -333,8 +339,6 @@
 
         .menu-item, .menu-item-type-taxonomy, .menu-item-object-product_cat, .menu-item-has-children {
             
-            
-
 
             .sub-menu{
                 display: none !important;
