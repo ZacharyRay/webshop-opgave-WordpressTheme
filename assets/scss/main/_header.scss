@@ -318,7 +318,41 @@
                 background-color: $primary-color;
             }
         }
-    }
+
+
+        // Mega Menu Dropdown \\ 
+
+    
+
+        .menu-item .menu-item-type-taxonomy .menu-item-object-product_cat .menu-item-has-children {
+            
+            .sub-menu{
+                display: none !important;
+                position: absolute !important;
+                width: 100% !important;
+            }
+
+            &:hover {
+                .sub-menu {
+                    display: block !important;
+                    li {
+                        width: 25% !important;
+                        display: flex;
+                        flex-wrap: wrap;
+                        text-align: left;
+                        ul {
+                            display: block;
+                            width: 100%;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    
+
+    
+}
 
 
 
@@ -494,16 +528,3 @@
 }
 
 
-// Mega Menu Dropdown \\ 
-
-.sub-menu{
-    display: none;
-}
-
-.menu-item {
-    &:hover {
-        .sub-menu {
-            display: block;
-        }
-    }
-}
