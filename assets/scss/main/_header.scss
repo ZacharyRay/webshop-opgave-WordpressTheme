@@ -225,6 +225,17 @@
                         z-index: 1000 !important;
                         background: $primary-background !important;
                         margin-left: -15px !important;
+                        display: flex !important;
+                        justify-content: space-around;
+                        position: relative !important;
+
+                        .sub-menu {
+                            display: block !important;
+                            background: none !important;
+                            margin-top: 40px !important;
+                            margin-left: 15px!important;
+                        }
+}
                     }
                 } 
             }
@@ -361,9 +372,6 @@
             
         }
     
-
-    
-}
 
 
 
