@@ -200,6 +200,23 @@
   margin: 15px;
   min-height: 500px; }
 
+#registration {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; }
+  #registration #registration-heading {
+    font-size: 1rem;
+    text-align: center; }
+  #registration form {
+    width: 200px; }
+    @media screen and (min-width: 800px) {
+      #registration form {
+        width: 400px; } }
+
 html {
   overflow-x: hidden; }
 
