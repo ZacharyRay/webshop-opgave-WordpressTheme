@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\njQuery(document).ready(function ($) {\n  // Hero slider\n  $('.main-carousel').flickity({\n    // options\n    contain: true,\n    autoPlay: true,\n    draggable: '>1',\n    prevNextButtons: false\n  });\n});\n\n//# sourceURL=webpack:///./assets/js/app.js?");
+eval("\n\njQuery(document).ready(function ($) {\n  // Hero slider\n  $('.main-carousel').flickity({\n    // options\n    contain: true,\n    autoPlay: true,\n    draggable: '>1',\n    prevNextButtons: false\n  }); // popup\n\n  function subscriptionPopup() {\n    // get the mPopup\n    var mpopup = $('#mpopupBox'); // open the mPopup\n\n    mpopup.show(); // close the mPopup once close element is clicked\n\n    $(\".close\").on('click', function () {\n      mpopup.hide();\n    }); // close the mPopup when user clicks outside of the box\n\n    $(window).on('click', function (e) {\n      if (e.target == mpopup[0]) {\n        mpopup.hide();\n      }\n    });\n  }\n\n  $(document).ready(function () {\n    var popDisplayed = $.cookie('popDisplayed');\n\n    if (popDisplayed == '1') {\n      return false;\n    } else {\n      setTimeout(function () {\n        subscriptionPopup();\n      }, 2000); // $.cookie('popDisplayed', '1', { expires: 0 });\n    }\n  });\n});\n\n//# sourceURL=webpack:///./assets/js/app.js?");
 
 /***/ }),
 
