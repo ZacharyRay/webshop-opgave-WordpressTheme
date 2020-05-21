@@ -44,7 +44,7 @@ $(document).ready(function() {
   }else{
       setTimeout( function() {
           subscriptionPopup();
-      },2000);
+      },5000);
       // $.cookie('popDisplayed', '1', { expires: 0 });
   }
 });
