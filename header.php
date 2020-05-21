@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5e8f28a9-7008-42f0-9cd0-b8c7eb3c220d" data-blockingmode="auto" type="text/javascript"></script>
     <title><?= bloginfo('name'); ?></title>
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
