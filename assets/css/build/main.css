@@ -377,7 +377,7 @@ body {
       padding: 0; }
       #categories-container #categories-categories ul li:hover .sub-menu {
         display: flex !important;
-        height: 400px !important;
+        padding-bottom: 25px !important;
         z-index: 1000 !important;
         background: #fff !important;
         margin-left: -15px !important;
@@ -394,10 +394,10 @@ body {
           margin-left: 0px !important;
           position: relative !important;
           padding-bottom: 25px !important; }
-        #categories-container #categories-categories ul li:hover .sub-menu a {
-          margin: 0 !important;
-          font-size: 18px !important;
-          font-weight: 300 !important; }
+          #categories-container #categories-categories ul li:hover .sub-menu .sub-menu a {
+            margin: 0 !important;
+            font-size: 18px !important;
+            font-weight: 300 !important; }
     #categories-container #categories-categories a {
       margin: 15px 10px;
       text-decoration: none;
@@ -486,7 +486,7 @@ body {
       .menu-item .sub-menu li ul li, .menu-item-type-taxonomy .sub-menu li ul li, .menu-item-object-product_cat .sub-menu li ul li, .menu-item-has-children .sub-menu li ul li {
         padding: 0 !important;
         box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2) !important;
-        margin-bottom: 5px !important; }
+        margin-bottom: 10px !important; }
 
 #menuToggle {
   display: block;
