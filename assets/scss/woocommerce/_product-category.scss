@@ -16,7 +16,7 @@
             align-items: center;
 
             li {
-                margin: 0!important;
+                margin: 10px !important;
             }
 
             @include min-screen(700px){
