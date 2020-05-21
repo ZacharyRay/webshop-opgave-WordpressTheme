@@ -383,13 +383,21 @@ body {
         margin-left: -15px !important;
         display: flex !important;
         position: absolute !important; }
+        #categories-container #categories-categories ul li:hover .sub-menu a {
+          margin: 0 !important;
+          font-size: 24px;
+          font-weight: 400; }
         #categories-container #categories-categories ul li:hover .sub-menu .sub-menu {
           display: block !important;
           background: none !important;
-          margin-top: 40px !important;
+          margin-top: 25px !important;
           margin-left: 0px !important;
           position: relative !important;
           padding-bottom: 25px !important; }
+        #categories-container #categories-categories ul li:hover .sub-menu a {
+          margin: 0 !important;
+          font-size: 18px;
+          font-weight: 300; }
     #categories-container #categories-categories a {
       margin: 15px 10px;
       text-decoration: none;
@@ -471,13 +479,14 @@ body {
   position: absolute !important;
   width: 100% !important; }
   .menu-item .sub-menu li, .menu-item-type-taxonomy .sub-menu li, .menu-item-object-product_cat .sub-menu li, .menu-item-has-children .sub-menu li {
-    margin-right: 10% !important;
     padding: 50px 0 0 50px; }
     .menu-item .sub-menu li ul, .menu-item-type-taxonomy .sub-menu li ul, .menu-item-object-product_cat .sub-menu li ul, .menu-item-has-children .sub-menu li ul {
       display: block !important;
       width: 100% !important; }
       .menu-item .sub-menu li ul li, .menu-item-type-taxonomy .sub-menu li ul li, .menu-item-object-product_cat .sub-menu li ul li, .menu-item-has-children .sub-menu li ul li {
-        padding: 0; }
+        padding: 0;
+        box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+        margin-bottom: 5px; }
 
 #menuToggle {
   display: block;
