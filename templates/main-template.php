@@ -8,9 +8,6 @@ get_header();
   while ( have_rows('content') ) : the_row();
 ?>
 
-
-
-
 <!-- acf-elements & woo-elements: -->
 
             <?php //frontpage hero ?>
@@ -48,21 +45,18 @@ get_header();
         <?php get_template_part('acf-elements/acf', 'subpage'); ?>
       <?php endif; ?>
 
+      <?php //popup ?>
+      <?php if( get_row_layout() == 'popup' ):?>
+        <?php get_template_part('acf-elements/acf', 'global-popup'); ?>
+      <?php endif; ?>
+
 <?php
   endwhile;  
   endif;
 ?>
 
-
-
-
 <!-- Woo -->
 
-
-
 <?php get_template_part('woo-elements/product', 'display'); ?>
-
-
-
 
 <?php get_footer(); ?>
