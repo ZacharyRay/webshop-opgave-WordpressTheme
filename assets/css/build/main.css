@@ -382,8 +382,7 @@ body {
         background: #fff !important;
         margin-left: -15px !important;
         display: flex !important;
-        justify-content: space-around;
-        position: relative !important; }
+        position: absolute !important; }
         #categories-container #categories-categories ul li:hover .sub-menu .sub-menu {
           display: block !important;
           background: none !important;
