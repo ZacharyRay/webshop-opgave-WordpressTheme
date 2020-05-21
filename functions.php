@@ -24,7 +24,7 @@ register_nav_menus(array(
     'SubPages' => 'SubPages',
     'Account' => 'Account',
     'Favorites' => 'Favorites',
-    'Checkout' => 'Checkout',
+    'Cart' => 'Cart',
     'FooterMenu' => 'FooterMenu'
 ));
 
