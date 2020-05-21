@@ -380,7 +380,7 @@ body {
         padding-bottom: 25px !important;
         z-index: 1000 !important;
         background: #fff !important;
-        margin-left: -15px !important;
+        left: 0 !important;
         display: flex !important;
         position: absolute !important; }
         #categories-container #categories-categories ul li:hover .sub-menu a {
@@ -639,7 +639,7 @@ body {
       padding: 0; }
       #footer-container #contact ul li, #footer-container #brands ul li, #footer-container #customer-service ul li, #footer-container #mailchimp ul li {
         list-style: none; }
-    @media screen and (max-width: 582px) {
+    @media screen and (max-width: 992px) {
       #footer-container #contact #social-media, #footer-container #brands #social-media, #footer-container #customer-service #social-media, #footer-container #mailchimp #social-media {
         display: flex;
         flex-wrap: wrap; } }
@@ -648,7 +648,7 @@ body {
       flex-direction: row;
       justify-content: flex-start;
       align-items: center; }
-      @media screen and (max-width: 582px) {
+      @media screen and (max-width: 992px) {
         #footer-container #contact #social-media a, #footer-container #brands #social-media a, #footer-container #customer-service #social-media a, #footer-container #mailchimp #social-media a {
           width: 100%;
           justify-content: center; } }
@@ -659,6 +659,10 @@ body {
         width: 15px;
         height: 15px;
         margin-right: 10px; }
+    @media screen and (max-width: 992px) {
+      #footer-container #contact #mailchimp, #footer-container #brands #mailchimp, #footer-container #customer-service #mailchimp, #footer-container #mailchimp #mailchimp {
+        display: flex;
+        justify-content: center; } }
     #footer-container #contact #mc_embed_signup, #footer-container #brands #mc_embed_signup, #footer-container #customer-service #mc_embed_signup, #footer-container #mailchimp #mc_embed_signup {
       background-color: #000 !important;
       font-family: Arial, Helvetica, sans-serif !important; }
