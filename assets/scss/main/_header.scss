@@ -232,8 +232,9 @@
                             display: block !important;
                             background: none !important;
                             margin-top: 40px !important;
-                            margin-left: 15px!important;
-                            
+                            margin-left: 0px!important;
+                            position: relative !important;
+                            padding-bottom: 25px !important;
                         }
 }
                     }
@@ -357,13 +358,14 @@
                 width: 100% !important;
 
                 li {
-                    width: 25% !important;
-                    display: flex !important;
-                    flex-wrap: wrap !important;
-                    text-align: left !important;
+                    margin-right: 10%!important;
+                    padding: 50px 0 0 50px;
                     ul {
                         display: block !important;
                         width: 100% !important;
+                        li {
+                            padding: 0;
+                        }
                         
                     }
                 }
