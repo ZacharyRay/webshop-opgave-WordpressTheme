@@ -387,7 +387,9 @@ body {
           display: block !important;
           background: none !important;
           margin-top: 40px !important;
-          margin-left: 15px !important; }
+          margin-left: 0px !important;
+          position: relative !important;
+          padding-bottom: 25px !important; }
     #categories-container #categories-categories a {
       margin: 15px 10px;
       text-decoration: none;
@@ -469,13 +471,13 @@ body {
   position: absolute !important;
   width: 100% !important; }
   .menu-item .sub-menu li, .menu-item-type-taxonomy .sub-menu li, .menu-item-object-product_cat .sub-menu li, .menu-item-has-children .sub-menu li {
-    width: 25% !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    text-align: left !important; }
+    margin-right: 10% !important;
+    padding: 50px 0 0 50px; }
     .menu-item .sub-menu li ul, .menu-item-type-taxonomy .sub-menu li ul, .menu-item-object-product_cat .sub-menu li ul, .menu-item-has-children .sub-menu li ul {
       display: block !important;
       width: 100% !important; }
+      .menu-item .sub-menu li ul li, .menu-item-type-taxonomy .sub-menu li ul li, .menu-item-object-product_cat .sub-menu li ul li, .menu-item-has-children .sub-menu li ul li {
+        padding: 0; }
 
 #menuToggle {
   display: block;
