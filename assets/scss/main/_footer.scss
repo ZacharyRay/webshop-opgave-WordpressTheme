@@ -72,12 +72,7 @@
             }
         }
 
-        #mailchimp {
-            @include max-screen(992px) {
-                display: flex;
-                justify-content: center;
-            }
-        }
+        
 
         #mc_embed_signup {
             background-color: $primary-footer-color !important;
@@ -106,6 +101,13 @@
                 }
             }
 
+        }
+    }
+
+    #mailchimp {
+        @include max-screen(992px) {
+            display: flex;
+            justify-content: center;
         }
     }
 }
