@@ -5,7 +5,6 @@
 
 #header-container {
     width: 100%;
-    background-color: $primary-color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +41,6 @@
         div {
             min-width: 45px;
             border: 1px solid $primary-background;
-            background-color: $primary-color;
             &:first-child {
                 background-color: $secondary-color;
                 border-top-left-radius: 13px;
@@ -62,7 +60,6 @@
 
         input {
             width: 70%;
-            background-color: $primary-color;
             border: none;
             padding: 0 15px;
             border: 1px solid $primary-background;
@@ -74,7 +71,7 @@
 
         button {
             min-width: 45px;
-            background: $primary-color center no-repeat;         
+            background: center no-repeat;         
             border-top-right-radius: 13px;
             border-bottom-right-radius: 13px;
             padding: 20px 0 20px 15px;
@@ -93,17 +90,10 @@
             padding: 5px;
     }
         img {
-            @include max-screen (1200px) {
-                margin: 0 auto;
-                display: flex;
-                width: 50%;
-                height: 50%;
-        }
-        @include max-screen (992px) {
+            margin: 0 auto;
             display: flex;
             width: 50%;
             height: 50%;
-    }
         }
 
      }
@@ -440,18 +430,13 @@
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    
-    background: $primary-font-color;
+    background: $white;
     border-radius: 3px;
-    
     z-index: 1;
-  
     transform-origin: 4px 0px;
-  
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
              /* background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), */
               opacity 0.55s ease;
-
 }
 
 #menuToggle span:first-child {
@@ -465,7 +450,7 @@
 #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: $primary-color;
+    background: $white;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
