@@ -17,11 +17,18 @@
 </nav>
 <div class="content-grid">
 
-<div id="header-container">
+<?php 
+$options = get_fields('options'); ?>
+<?php foreach($options as $option_fields){ ?>
+<div id="header-container" style="background-color: <?= $option_fields['color_on_header_and_footer'] ?>;">
+<?php } ?>
+
     <div id="header-box_one">
-        <div></div>
-        <input type="text" placeholder="Search Here...">
-        <button style="background-image: url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/search.png')"></button>
+    <?php foreach($options as $option_fields){ ?>
+        <div style="background-color: <?= $option_fields['color_on_header_and_footer'] ?>;"></div>
+        <input type="text" placeholder="Search Here..." style="background-color: <?= $option_fields['color_on_header_and_footer'] ?>;">
+        <button style="background-image: url('http://clone.hovedopgave.kinsta.cloud/wp-content/uploads/sites/17/2020/05/search.png'); background-color: <?= $option_fields['color_on_header_and_footer'] ?>;"></button>
+        <?php } ?>
     </div>
 
     <div id="header-box_one-burgermenu">

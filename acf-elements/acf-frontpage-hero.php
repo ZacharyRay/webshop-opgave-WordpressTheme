@@ -1,5 +1,6 @@
 <?php
-            $image = get_sub_field('frontpage_hero_image');
+$image = get_sub_field('frontpage_hero_image');     
+$options = get_fields('options');
 ?>
 
 
@@ -12,7 +13,9 @@
     <div id="frontpage-hero-text-container">
       <div id="headline"><?= $hero_image['hero_text'] ?></div>
       <div id="sub-title"><?= $hero_image['hero_secondary_text'] ?></div>
-      <a id="buy-button" href="#">
+      <?php foreach($options as $option_fields){ ?>
+      <a id="buy-button" href="#" style="background-color: <?= $option_fields['color_on_buttons'] ?>;">
+      <?php } ?>
         Shop now
       </a>
     </div>

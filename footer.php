@@ -4,7 +4,11 @@
 $options = get_fields('options');
 wp_footer(); 
 ?>
-<div id="footer-container">
+<?php 
+$options = get_fields('options'); ?>
+<?php foreach($options as $option_fields){ ?>
+<div id="footer-container" style="background-color: <?= $option_fields['color_on_header_and_footer'] ?>;">
+<?php } ?>
     <?php foreach($options as $option_fields){
         ?>
     <div id="contact">
@@ -53,7 +57,9 @@ wp_footer();
             <!-- Mailchimp embedded newsletter service -->
             <!-- Begin Mailchimp Signup Form -->
         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-        <div id="mc_embed_signup">
+        <?php foreach($options as $option_fields){ ?>
+        <div id="mc_embed_signup" style="background-color: <?= $option_fields['color_on_header_and_footer'] ?>!important;">
+        <?php } ?>
             <form action="<?= $option_fields['mailchimp']; ?>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
                     <h2>Subscribe</h2>

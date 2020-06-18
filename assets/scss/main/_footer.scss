@@ -5,7 +5,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: $primary-footer-color;
     @include max-screen(992px) {
         flex-wrap: wrap; 
     }
@@ -75,7 +74,6 @@
         
 
         #mc_embed_signup {
-            background-color: $primary-footer-color !important;
             font-family: Arial, Helvetica, sans-serif!important;
 
             form {

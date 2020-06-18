@@ -68,7 +68,6 @@
     .carousel-cell #frontpage-hero-text-container #buy-button {
       color: #000000;
       font-weight: 300;
-      background-color: #fff;
       padding: 15px 35px 15px 35px;
       width: 20%;
       margin: 0 auto;
@@ -308,7 +307,6 @@ body {
 
 #header-container {
   width: 100%;
-  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,8 +334,7 @@ body {
         display: none; } }
     #header-container #header-box_one div {
       min-width: 45px;
-      border: 1px solid #fff;
-      background-color: #000; }
+      border: 1px solid #fff; }
       #header-container #header-box_one div:first-child {
         background-color: #000;
         border-top-left-radius: 13px;
@@ -352,7 +349,6 @@ body {
           color: #fff; }
     #header-container #header-box_one input {
       width: 70%;
-      background-color: #000;
       border: none;
       padding: 0 15px;
       border: 1px solid #fff;
@@ -361,7 +357,7 @@ body {
         color: #fff; }
     #header-container #header-box_one button {
       min-width: 45px;
-      background: #000 center no-repeat;
+      background: center no-repeat;
       border-top-right-radius: 13px;
       border-bottom-right-radius: 13px;
       padding: 20px 0 20px 15px;
@@ -374,17 +370,11 @@ body {
     @media screen and (max-width: 868px) {
       #header-container #header-box_two {
         padding: 5px; } }
-    @media screen and (max-width: 1200px) {
-      #header-container #header-box_two img {
-        margin: 0 auto;
-        display: flex;
-        width: 50%;
-        height: 50%; } }
-    @media screen and (max-width: 992px) {
-      #header-container #header-box_two img {
-        display: flex;
-        width: 50%;
-        height: 50%; } }
+    #header-container #header-box_two img {
+      margin: 0 auto;
+      display: flex;
+      width: 50%;
+      height: 50%; }
   #header-container #header-box_three {
     right: 0;
     position: absolute;
@@ -601,7 +591,7 @@ body {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #fff;
+  background: #ffffff;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -616,7 +606,7 @@ body {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #000; }
+  background: #ffffff; }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
@@ -666,8 +656,7 @@ body {
 #footer-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  background-color: #000; }
+  justify-content: space-between; }
   @media screen and (max-width: 992px) {
     #footer-container {
       flex-wrap: wrap; } }
@@ -716,7 +705,6 @@ body {
         height: 15px;
         margin-right: 10px; }
     #footer-container #contact #mc_embed_signup, #footer-container #brands #mc_embed_signup, #footer-container #customer-service #mc_embed_signup, #footer-container #mailchimp #mc_embed_signup {
-      background-color: #000 !important;
       font-family: Arial, Helvetica, sans-serif !important; }
       #footer-container #contact #mc_embed_signup form, #footer-container #brands #mc_embed_signup form, #footer-container #customer-service #mc_embed_signup form, #footer-container #mailchimp #mc_embed_signup form {
         padding: 0 !important; }
